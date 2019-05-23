@@ -2,9 +2,9 @@
   background: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
 //   height: 668px;
   margin-bottom: 0;
 //   padding-top: 180px;
@@ -20,7 +20,7 @@
     font-style: italic;
     font-size: 23px;
     position: relative;
-    text-align: center;
+    text-align: left;
     padding-bottom: .5em;
 //     margin-top: auto;
     letter-spacing: -.5px;
@@ -28,13 +28,11 @@
     &::after {
       content: '';
       display: inline-block;
-      width: 500px;
+      width: 100%;
       position: absolute;
       bottom: 0;
       height: 2px;
-      margin: 0 auto;
-      transform: translateX(-50%);
-      left: 50%;
+      left: 0;
       background: $white;
     }
   }

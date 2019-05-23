@@ -13,36 +13,36 @@ Template Name: Home
         <div class="jumbotron">
             <div class="jumbo-content">
                 <div>
-                    <div class="h2">Commercial Printer</div>
-                    <div class="fade-down">
+
+                    <div>
+
+                        <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img
+                                src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
+    'description'
+); ?>" /></a>
+
                         <?php if( $h1 = get_field('custom_h1') ) : ?>
 
                         <?php echo $h1 ?>
 
                         <?php endif; ?>
                     </div>
+
                 </div>
             </div>
 
         </div>
+        <div class="secondary-nav-title">
+            <div class="ribbon">Free Consultations On Personal Injury & Family Cases</div>
+        </div>
         <div class="secondary-nav">
-            <ul class="list-inline">
-                <li>
-                    <a href="<?=SITEURL?>/printing-services/">OFFSET</a></li>
-                <li>
-                    <a href="<?=SITEURL?>/printing-services/">DIGITAL</a></li>
-                <li>
-                    <a href="<?=SITEURL?>/printing-services/wide-format-printing/">WIDE FORMAT</a></li>
-                <li>
-                    <a href="<?=SITEURL?>/promo-items/">PROMOTIONAL ITEMS</a>
-                </li>
-            </ul>
+            <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
         </div>
     </div>
 
 </section>
 
-<section id="home-module-2" class="home-module-2">
+<section id="home-module-2" class="home-module-2 ">
     <div class="container">
         <div class="row">
             <div class="col col-lg-7">

@@ -1,12 +1,9 @@
 <div id="nav-sidebar" class="sticky">
     <ul class="list-unstyled">
 
-        <li>
-            <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
-        </li>
+
         <li>
             <a class="sidebar-link" href="<?=SITEURL?>/printing-services/">
-                <?php echo get_template_part('template-parts/icons/icon', '1') ?>
             </a>
             <div class="navbar-collapse collapse show tab">
                 <ul class="nav navbar-nav">
@@ -20,7 +17,6 @@
         </li>
         <li>
             <a class="sidebar-link" href="<?=SITEURL?>/printing-services/graphic-design/">
-                <?php echo get_template_part('template-parts/icons/icon', '2') ?>
             </a>
             <div class="navbar-collapse collapse show tab">
                 <ul class="nav navbar-nav">
@@ -33,7 +29,6 @@
         </li>
         <li>
             <a class="sidebar-link" href="<?=SITEURL?>/printing-services/bindery-finishing/">
-                <?php echo get_template_part('template-parts/icons/icon', '3') ?>
             </a>
             <div class="navbar-collapse collapse show tab">
                 <ul class="nav navbar-nav">
@@ -46,7 +41,6 @@
         </li>
         <li>
             <a class="sidebar-link" href="<?=SITEURL?>/printing-services/booklet-binding/">
-                <?php echo get_template_part('template-parts/icons/icon', '4') ?>
             </a>
             <div class="navbar-collapse collapse show tab">
                 <ul class="nav navbar-nav">
@@ -59,7 +53,6 @@
         </li>
         <li>
             <a class="sidebar-link contact-link" href="#footer" data-target="#footer">
-                <?php echo get_template_part('template-parts/icons/icon', '5') ?>
             </a>
             <div class="navbar-collapse collapse show tab">
                 <ul class="nav navbar-nav">

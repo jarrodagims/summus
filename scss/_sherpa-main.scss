@@ -950,43 +950,27 @@ $navWidth: 80px;
   margin-left: -$navWidth;
 
   > ul.list-unstyled {
-    @include bg-gradient(top, $list2);
-    height: 100%;
     display: flex;
     flex-direction: column;
-    width: $navWidth;
-  }
-
-  > ul.list-unstyled > li:first-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: $navWidth; 
     height: auto;
-
-    > a {
-      margin-right: -2px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-
-      &:hover {
-        background: transparent;
-      }
-    }
+    justify-content: flex-end;
   }
 
   > ul.list-unstyled > li {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.31);
 
-    &:first-child {
-      flex: 0 auto;
-      height: 127px;
+    > a::before {
+      content: '';
+      background: red;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      display: block;
     }
 
     > a {
@@ -997,19 +981,6 @@ $navWidth: 80px;
       align-items: center;
       transition: background 300ms ease-in-out;
       position: relative;
-
-      &::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: rgba(255, 255, 255, 0.17);
-        opacity: 0;
-        transition: opacity 300ms ease-in-out;
-      }
 
       &:hover {
         &::before {
@@ -1025,7 +996,7 @@ $navWidth: 80px;
   }
 
   > ul.list-unstyled > li:first-child {
-    background: $black;
+    
   }
 
   flex: 1;
@@ -1267,12 +1238,6 @@ $navWidth: 80px;
 .stuck {
   position: fixed;
   top: 0;
-
-  &#nav-sidebar {
-    > ul.list-unstyled > li:first-child {
-      height: 14.28%;
-    }
-  }
 }
 
 .content-page {
@@ -2057,6 +2022,7 @@ ul.floorplan-nav {
 
   .sticky-wrapper #nav-sidebar {
     height: 100%;
+    display: flex;
   }
 
   .internal .sticky-wrapper,

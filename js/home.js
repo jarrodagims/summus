@@ -13,7 +13,7 @@
       });
     });
 
-    $(".sidebar-link.contact-link").click(function(e) {
+    $(".sidebar-link").click(function(e) {
       e.preventDefault();
 
       $("html, body").animate(

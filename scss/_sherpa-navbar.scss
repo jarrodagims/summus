@@ -178,7 +178,7 @@ the right sidebar including social icons address and phone
   }
 
   a {
-    color: $black;
+    color: $white;
   }
 
   ul.social-media {
@@ -274,7 +274,6 @@ the right sidebar including social icons address and phone
     justify-content: center;
     align-items: center;
     height: 100%;
-
   }
 
   #menu-primary {
@@ -283,16 +282,13 @@ the right sidebar including social icons address and phone
     }
 
     @include media-breakpoint-down(md) {
-
       li a {
         font-size: 15px;
         text-align: center;
         padding: 1em;
       }
     }
-  } 
-
-  
+  }
 
   .navbar-collapse,
   .navbar-form {
@@ -308,7 +304,7 @@ the right sidebar including social icons address and phone
 //   @include navbar-home();
 // }
 
-@include navbar-home(); 
+// @include navbar-home();
 
 .internal-header {
   background: url("../img/bg-header-internal.jpg") center 0 no-repeat;
@@ -317,8 +313,6 @@ the right sidebar including social icons address and phone
   display: flex;
   flex-direction: column;
   padding-top: 0.5em;
-
-
 
   .container-fluid {
     position: absolute;
@@ -371,7 +365,7 @@ the right sidebar including social icons address and phone
   @include media-breakpoint-down(lg) {
     margin-bottom: 2em;
   }
-} 
+}
 
 .navbar-toggler-icon {
   @include svg-hamburger();
@@ -382,7 +376,7 @@ the right sidebar including social icons address and phone
   .dropdown:hover > .dropdown-menu {
     display: block;
     margin-top: 0px;
-    background: rgba(0,0,0,0.95);
+    background: rgba(0, 0, 0, 0.95);
   }
 }
 
@@ -394,10 +388,9 @@ the right sidebar including social icons address and phone
 
 .banner .dropdown-menu {
   width: 300px;
-} 
+}
 
 .internal {
-
   @include media-breakpoint-up(sm) {
     .btn-header {
       margin-left: 1em;
@@ -424,7 +417,7 @@ the right sidebar including social icons address and phone
     margin-top: 1em;
 
     a {
-      color: #CBCBCB;
+      color: #cbcbcb;
     }
 
     li {
@@ -437,8 +430,6 @@ the right sidebar including social icons address and phone
   }
 }
 
-
-
 @include media-breakpoint-down(lg) {
   .navbar-right {
     margin-bottom: 0;
@@ -449,24 +440,24 @@ the right sidebar including social icons address and phone
       justify-content: flex-end;
     }
 
-
-    li.menu-item.directions, li.menu-item.contact {
+    li.menu-item.directions,
+    li.menu-item.contact {
       position: relative;
       padding: 0 1em;
       margin-left: 0;
     }
 
     li.menu-item.directions::after {
-        content: "";
-        background: #fff;
-        opacity: 0.44;
-        height: 15px;
-        width: 1px;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+      content: "";
+      background: #fff;
+      opacity: 0.44;
+      height: 15px;
+      width: 1px;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     li.menu-item {
@@ -507,7 +498,6 @@ the right sidebar including social icons address and phone
 
 @include media-breakpoint-down(sm) {
   .navbar-right {
-
     li:first-child {
       text-align: left;
       flex: 0 0 100%;
@@ -526,7 +516,6 @@ the right sidebar including social icons address and phone
     }
   }
 }
-
 
 .dropdown-menu {
   top: auto;

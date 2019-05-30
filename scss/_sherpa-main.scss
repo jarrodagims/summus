@@ -1203,7 +1203,7 @@ $navWidth: 80px;
 // }
 
 .content {
-  width: 100%;
+  flex: 1;
 }
 
 // .page-template-page-home {
@@ -2005,6 +2005,13 @@ ul.floorplan-nav {
   .sticky-wrapper #nav-sidebar {
     height: 100%;
     display: flex;
+    background: transparent;
+    transition: background 3s ease-in-out;
+
+    &.stuck {
+      transition: background 3s ease-in-out;
+      background: rgba(0,0,0,0.3);
+    }
   }
 
   .internal .sticky-wrapper,

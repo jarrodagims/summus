@@ -31,6 +31,7 @@
       margin-top: .5em;
       margin-bottom: .5em;
       font-family: 'Cinzel', serif;
+      letter-spacing: 2px;
     }
 
     .jumbo-content {
@@ -247,8 +248,7 @@
       color: $white;
 
       &:hover {
-        background: #998F62;
-        
+        background : rgba(153, 143, 98, 0.55);
       }
     }
   }

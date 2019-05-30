@@ -64,6 +64,10 @@
     padding: 2em 0;
   }
 
+  .col .extra-padding {
+    padding: 76px 126px;
+  }
+
 
   iframe {
     right: 0;
@@ -149,7 +153,7 @@
 
   ul.social-media {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-top: 3em;
 
 

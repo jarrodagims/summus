@@ -3,11 +3,22 @@
   .shadow {
     text-align: center;
     @include dropshadow();
+
+    h2 {
+      margin: 1em 0 0;
+    }
+  }
+
+  text-align: center;
+
+  .col {
+    padding: 2.5em 0;
   }
   
-  h2 {
-    margin-bottom: 1em;
+  p:last-child {
+    margin-bottom: 0;
   }
+ 
 
   @include media-breakpoint-down(lg) {
     .row .col:first-child {
@@ -19,8 +30,5 @@
       margin-bottom: 2em;
     }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
   }
 }

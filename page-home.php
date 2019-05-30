@@ -339,7 +339,7 @@ Template Name: Home
                 <div class="col">
                     <img src="<?=IMGURL?>attorneys.svg" width="144" alt="">
 
-                    <h2>Attorneys Who Listen and
+                    <h2>Attorneys Who Listen and<br class="d-none d-lg-block">
                         Fight For You </h2>
 
                 </div>

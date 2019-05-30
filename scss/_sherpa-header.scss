@@ -28,9 +28,11 @@
     padding: .75em 0;
     width: 100%;
 
+
     .navbar-right {
         margin-bottom: 1em;
         font-weight: 500;
+        text-align: right;
     }
 
     @include media-breakpoint-down(md) {

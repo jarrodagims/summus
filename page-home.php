@@ -5,6 +5,14 @@ Template Name: Home
  */?>
 
 <section id="home-module-1" class="home-module-1 waypoint">
+    <div class="nav-sidebar">
+        <div class="brand-header d-lg-none">
+            <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
+            'description'
+        ); ?>" /></a>
+        </div>
+    </div>
+
     <?php echo get_template_part('template-parts/navbar'); ?>
     <div class="jumbo-container">
 
@@ -32,11 +40,13 @@ Template Name: Home
             </div>
 
         </div>
-        <div class="secondary-nav-title">
-            <div class="ribbon">Free Consultations On Personal Injury & Family Cases</div>
-        </div>
-        <div class="secondary-nav">
-            <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
+        <div class="secondary-container">
+            <div class="secondary-nav-title">
+                <div class="ribbon">Free Consultations On Personal Injury & Family Cases</div>
+            </div>
+            <div class="secondary-nav">
+                <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
+            </div>
         </div>
     </div>
 
@@ -45,21 +55,11 @@ Template Name: Home
 <section id="home-module-2" class="home-module-2 ">
     <div class="container">
         <div class="row">
-            <div class="col col-lg-7">
-                <div class="side-text">
-                    <span>#getprinted</span>
 
-                    <picture>
-                        <source srcset="<?=IMGURL?>printed-banners.jpg" media="(min-width: 992px)">
-                        <img src="<?=IMGURL?>banner-window.jpg" />
-                    </picture>
-
-                </div>
-            </div>
             <div class="col">
                 <div>
                     <h2 class="h4 expander collapsed" data-toggle="collapse" data-target="#collapse"
-                        aria-expanded="false" aria-controls="collapse"><span>Printing Services</span></h2>
+                        aria-expanded="false" aria-controls="collapse"><span>Bulleted List</span></h2>
                     <div class="extra-padding">
                         <?php if( $section_1_expander = get_field('section_1_expander') ) : ?>
                         <?php echo $section_1_expander ?>
@@ -85,207 +85,390 @@ Template Name: Home
     </div>
 </section>
 
-
-
-<section class="ribbon">
+<section class="home-module-3">
     <div class="container">
         <div class="row">
             <div class="col">
-                <ul class="list-inline">
-                    <li>
-                        <a href="<?=SITEURL?>/printing-services/">Printing Services</a>
-                    </li>
-                    <li><a href="<?=SITEURL?>/printing-services/graphic-design/">Design Services</a>
-                    </li>
-                    <li><a href="<?=SITEURL?>/marketing-services/">Mailing Services</a>
-                    </li>
-                    <li><a href="<?=SITEURL?>/marketing-services/">Mailing Lists</a>
-                    </li>
-                </ul>
+                <h2 class="text-center">The Law Offices of<br class="d-none d-lg-block">
+                    Rios & Parada, PLLC</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container three-col">
+        <div>
+            <div class="row">
+                <div class="col">
+                    <div class="h2">Overview of Our Services: Experienced Attorneys That Fight For You</div>
+                </div>
+            </div>
+            <div class="three-columns">
+                <div>
+                    <div class="img-container">
+                        <img src="<?=IMGURL?>knees.jpg" alt="">
+                    </div>
+
+                    <div class="column-top">
+                        <p>Personal Injury</p>
+                    </div>
+
+                    <div class="extra-padding">
+                        <p><strong><em>Personal injury is a broad category of legal cases that pertain to injury to the
+                                    body
+                                    resulting
+                                    from
+                                    negligence, car crashes, or other types of accidents.</em></strong></p>
+
+                        <p>These type of cases are for clients who suffered an injury to their person as a result of
+                            someone
+                            else’s negligent behavior, business practices, or unsafe facility. Personal injury can have
+                            a
+                            significant impact on people’s lives, cost thousands in medical expenses, and alter a
+                            person’s
+                            ability to work. These are difficult cases that affect people’s quality of life, financial
+                            standing,
+                            and beyond.
+                        </p>
+                    </div>
+
+
+                </div>
+                <div>
+                    <div class="img-container">
+                        <img src="<?=IMGURL?>passport.jpg" alt="">
+                    </div>
+
+                    <div class="column-top">
+                        <p>Immigration</p>
+                    </div>
+
+                    <div class="extra-padding">
+                        <p>
+                            <strong><em>The United States of America is the land of opportunity, innovation, and
+                                    greatness.</em></strong>
+                        </p>
+
+                        <p>
+                            It is a land that welcomes people of all backgrounds and religions, and it is why thousands
+                            of
+                            people are fighting to call the U.S.A. their home.
+                        </p>
+
+                        <p>
+                            Immigration law is important to us, especially as a homegrown city of immigrants. The
+                            immigration
+                            system is overwhelming and downright impossible to tackle on your own. That’s why we take
+                            our
+                            job
+                            seriously. We work to help you resolve your case, whether you have been detained or are
+                            looking
+                            to
+                            change your legal status.
+                        </p>
+                    </div>
+
+
+                </div>
+                <div>
+                    <div class="img-container">
+                        <img src="<?=IMGURL?>happy-people.jpg" alt="">
+                    </div>
+
+                    <div class="column-top">
+                        <p>Family Law</p>
+                    </div>
+
+                    <div class="extra-padding">
+                        <p>
+                            <strong><em>Family life is everything. But we know that the dynamic of a family is often
+                                    complicated,
+                                    resulting
+                                    in difficult moments.</em></strong>
+                        </p>
+
+                        <p>
+                            When matters become serious, legal assistance is necessary. Our law firm is here to help you
+                            settle
+                            disputes that are otherwise painful, complicated, and wrought with legal implications. We
+                            are
+                            committed to ensuring our clients have adequate and expert legal counsel when it comes to
+                            dealing
+                            with family issues.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="three-columns">
+
+                <div>
+                    <div class="bottom">
+                        <p>Some of the most common include:</p>
+                    </div>
+
+                    <div class="bottom-end extra-padding">
+                        <ul>
+                            <li>Car accidents</li>
+                            <li>Motorcycle accidents</li>
+                            <li>Dog bites</li>
+                            <li>Slip & fall accidents</li>
+                            <li>Wrongful death</li>
+                            <li>Trucking accidents</li>
+                            <li>Pedestrian accidents</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bottom">
+                        <p>Below are some of the services we offer:</p>
+                    </div>
+
+                    <div class="bottom-end  extra-padding">
+                        <ul>
+                            <li>Deportation defense</li>
+                            <li>Motions for bonds &</li>
+                            <li>bond processing</li>
+                            <li>DACA renewals</li>
+                            <li>Citizenship applications</li>
+                        </ul>
+
+                        <p>
+                            Adjustment of status <a href="<?=SITEURL?>">(green cards or visas)</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="bottom">
+                        <p>Some of the family law cases we work include:</p>
+                    </div>
+
+                    <div class="bottom-end  extra-padding">
+                        <ul>
+                            <li>Divorce</li>
+                            <li>Child custody</li>
+                            <li>Child support</li>
+                            <li>Modifications</li>
+                            <li>Enforcement</li>
+                            <li>Protective orders</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-ribbon">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        We can help. <a href="<?=SITEURL?>/contact-us/">Contact us today</a>.
+                    </p>
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 
-<section id="home-module-3" class="home-module-3">
+<section class="ribbon">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>The Law Offices of<br class="d-none d-lg-block"> Rios & Parada, PLLC:</h2>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <div class="bg-grid">
-        <div class="container grid-container">
+<section class="home-module-4">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="<?=IMGURL?>justice.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <h2>A Law Firm That Fights For Justice</h2>
 
+                        <strong><em>The Law Offices of Rios & Parada, PLLC:<br />
+                                A Law Firm That Fights For Justice</em></strong>
+
+                        <p>
+                            The Rios & Parada law firm is made up of local attorneys who are closely familiar with the
+                            city
+                            and the great state of Texas. Our three attorneys attended law school at the prestigious
+                            Thurgood Marshall School of Law in Houston, Texas.
+                        </p>
+
+                        <p>
+                            Gabriel Seañez and Ricardo Rios are both from El Paso and grew up in the city. Tony Parada
+                            was
+                            raised in Huntsville, Texas but focused intensely on immigration law. Mr. Parada’s expertise
+                            in
+                            this area of law led him to El Paso, Texas where he became the immigration specialist of the
+                            firm.
+                        </p>
+
+                        <p>
+                            Together, our team of attorneys forms the region’s most experienced and knowledgeable team
+                            of
+                            legal help in personal injury, immigration, and family law.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-module-5">
+    <div class="shadow">
+        <div class="container">
             <div class="row">
 
                 <div class="col">
-                    <div class="grid-img">
+                    <img src="<?=IMGURL?>attorneys.svg" width="144" alt="">
 
-                        <picture>
-                            <source srcset="<?=IMGURL?>grid-retina.png 2x" />
-                            <img src="<?=IMGURL?>grid-sm.png" alt="Sidebar" usemap="#image-map" class="d-xl-none" />
-                        </picture>
+                    <h2>Attorneys Who Listen and
+                        Fight For You </h2>
 
-                        <map name="image-map">
-                            <area target="" alt="Digital" title="Digital" href="<?=SITEURL?>/printing-services/"
-                                coords="0,228,361,116" shape="rect">
-                            <area target="" alt="Wide Format" title="Wide Format"
-                                href="<?=SITEURL?>/printing-services/wide-format-printing/" coords="1,230,360,458"
-                                shape="rect">
-                            <area target="" alt="Offset" title="Offset" href="<?=SITEURL?>/printing-services/"
-                                coords="0,459,361,574" shape="rect">
-                            <area target="" alt="Promotional Items" title="Promotional Items"
-                                href="<?=SITEURL?>/printing-services/promo-items/" coords="0,574,361,801" shape="rect">
-                            <area target="" alt="Hello" title="Contact Us" href="<?=SITEURL?>/contact-us/"
-                                coords="2,0,361,114" shape="rect">
-                        </map>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>
+                    <strong>
+                        <em>Our commitment is to the law and to the individual. Every case is different and every
+                            case
+                            is
+                            worth fighting.</em>
+
+                    </strong>
+                </p>
+
+                <p>
+                    There is a lot at stake, whether it is your personal health, your freedom, or your family’s future.
+                    These matters affect your life. For these reasons, we uphold the highest standards of excellence
+                    when it
+                    comes to serving our clients and representing their individual case. We offer free consultations for
+                    family law and personal injury cases.
+                </p>
+
+                <p>
+                    We fight honestly. Every case begins by telling you the truth about your situation. We then explain
+                    the
+                    next steps and how we will represent you. As our client, we keep open communication to ensure you
+                    are
+                    always aware of the standing and status of your pending case or developments.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="ribbon">
+    <h2>Schedule a consultation</h2>
+</div>
+
+
+<section class="home-module-6">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <div class="extra-padding">
+                    <h2>Who We Serve</h2>
+                </div>
+            </div>
+            <div class="col">
+                <div class="extra-padding">
+                    <p>We serve the El Paso community. This includes private citizens or individuals who have been
+                        injured,
+                        as well as families, and numerous vulnerable immigrants fighting for a better way of life in the
+                        United States.
+                    </p>
+                </div>
+
+                <div class="bottom">
+                    <div class="extra-padding">
+                        <p>
+                            Our office is located in downtown<br />
+                            El Paso at 1505 E. Missouri Avenue.</p>
+
+                        <a href="">
+                            <button class="btn btn-outline">
+                                GET DIRECTIONS
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container d-none d-xl-block">
-        <div class="row shadow">
-            <div class="col">
-                <img src="<?=IMGURL?>bg-hi.jpg" alt="Hi">
-            </div>
-            <div class="col bg-gradient">
-                <h2>
-                    <a href="<?=SITEURL?>/promo-items/">Promotional Items</a>
-                </h2>
-            </div>
-        </div>
-    </div>
 </section>
 
-<section id="home-module-4" class="home-module-4">
-    <div class="container bg-gray">
-        <div class="row">
-            <div class="col side-text align-bottom">
-                <div class="extra-padding">
-                    <h2>Our Services</h2>
-                    <p>As a well-equipped press and digital printer, Universal Graphics has an extensive list of
-                        services to cover all marketing and printing material needs for any business to promote, grow,
-                        and represent their brand. Whether you need offset printing, a banner printed for your event,
-                        flyers, booklets, envelopes or postcards. There is no better way to attract customers than
-                        well-designed and quality printed material.</p>
-
-                    <span>#printed</span>
-                </div>
-
-            </div>
-            <div class="col bg-neon">
-
-            </div>
-        </div>
-    </div>
-    <div class="big-buttons">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="<?=SITEURL?>/submit-files/">SUBMIT YOUR FILES</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container bg-green">
-        <div class="row">
-            <div class="col">
-                <h2>Featured Products</h2>
-                <a href="<?=SITEURL?>/printing-services/">
-                    <button class="btn btn-primary">
-                        VIEW FEATURED PRODUCTS
-                    </button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container bg-printer">
-
-        <div class="row">
-            <div class="col">
-                <ul class="columns">
-                    <li>Business Cards</li>
-                    <li>Door Hangers</li>
-                    <li>Edge Cards</li>
-                    <li>Envelopes</li>
-                    <li>Event Tickets</li>
-                    <li>Fabric Banners</li>
-                    <li>Flags</li>
-                    <li>Flyers and Brochures</li>
-                    <li>Indoor Banners</li>
-                    <li>Letterhead</li>
-                    <li>Mounted Canvas</li>
-                    <li>Mugs</li>
-                    <li>NCR Forms</li>
-                    <li>Painted Edge Cards</li>
-                    <li>Postcards</li>
-                    <li>Roll Labels</li>
-                    <li>Stickers</li>
-                    <li>T-Shirt</li>
-                    <li>Tote Bags</li>
-                    <li>View All Products</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="home-module-5" class="home-module-5 home-module-2">
+<section class="home-module-7">
     <div class="container">
         <div class="row">
-            <div class="col col-lg-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="<?=IMGURL?>gavel.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <h2>
+                            How Can We Help You?
+                        </h2>
 
-                <picture>
-                    <source srcset="<?=IMGURL?>dont-advertise-entice.jpg" media="(min-width: 992px)">
-                    <img src="<?=IMGURL?>entice-banner.jpg" alt="Interior" />
-                </picture>
-            </div>
-            <div class="col">
-                <div class="extra-padding">
+                        <p>
+                            The Law Offices of Rios & Parada, PLLC focuses on several types of cases including personal
+                            injury, family law, and immigration. Below is an overview of what we do and what we offer.
+                        </p>
 
-                    <h2>Our Promise
-                    </h2>
+                        <h2>Value Proposition</h2>
+                        <p>We stand firm in upholding high standards of excellence when it
+                            comes to serving our clients. As attorneys, we spend a lot of time studying law and
+                            understanding our judicial system so we can fight for you in the most effective way
+                            possible. At The Law Offices of Rios & Parada, PLLC, we operate under values of commitment,
+                            honesty, and professionalism. We are not interested in taking your money and tossing your
+                            case to the forgotten ‘to do’ pile. We will get your case in motion so that you can achieve
+                            a favorable outcome, allowing you to continue living a normal life.</p>
 
-                    <p>
-                        Universal Graphics has spent the last few decades immersing itself in the business of commercial
-                        printing and graphic design services. Throughout our long journey, we have learned the ins and
-                        outs of the industry, but we have always understood that what truly sets us apart is our
-                        commitment to the customer and the quality of our products.
-                    </p>
+                        <p>
+                            Our law firm is committed to serving each one of our clients with respect, honesty, and
+                            integrity.
+                        </p>
 
-                    <p>
-                        We value personal relationships with our customers and helping their business flourish. Our
-                        expertise lies in commercial printniversal Graphics serves customers all over the city and also
-                        in the surrounding areas of New Mexico such as Las Cruces and Alamogordo.ing and representing
-                        businesses through professional and quality designs and products.
-
-                    </p>
+                    </div>
 
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<section id="home-module-6" class="home-module-6">
-    <div class="container">
-        <div class="row">
-            <div class="col side-text align-bottom">
-                <div class="extra-padding">
-                    <h2>About Our Location
-                    </h2>
+<section class="home-module-8">
+    <div class="secondary-nav">
 
-                    <p>Universal Graphics is conveniently located on the Eastside of El Paso near Vista del Sol and
-                        Lomaland. Find us at the heart of East El Paso where the growing industries and private sector
-                        make it a vibrant and thriving area. </p>
-
-                    <span>#ElPaso</span>
-                </div>
-
-            </div>
-            <div class="col">
-
-            </div>
-        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13568.019099696785!2d-106.4767735!3d31.7703557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc130c1d7046c2add!2sThe+Law+Offices+of+Rios+%26+Parada%2C+PLLC!5e0!3m2!1sen!2sus!4v1559235322722!5m2!1sen!2sus"
+            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
     </div>
 </section>
 

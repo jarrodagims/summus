@@ -1,4 +1,9 @@
 .home-module-5 {
+
+  .shadow {
+    text-align: center;
+    @include dropshadow();
+  }
   
   h2 {
     margin-bottom: 1em;

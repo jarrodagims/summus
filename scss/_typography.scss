@@ -11,7 +11,7 @@ h2,
 h3,
 h4 {
   font-weight: 300;
-  @include montserrat();
+  @include serif();
 
   strong {
     font-weight: 700;

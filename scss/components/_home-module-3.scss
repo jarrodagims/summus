@@ -1,54 +1,134 @@
 .home-module-3 {
-  .bg-grid {
-    background: url("../img/bg-square.jpg") 0 0 no-repeat;
-    background-size: cover;
-    padding-top: 6.25em;
-  }
 
-  padding-bottom: 4em;
+ .contact-ribbon {
+   background: rgba(24, 76, 155, 0.27);
+   text-align: right;
+   color: #4D4D4D;
+   margin-top: 60px;
 
-  .bg-gradient {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   a {
+     color: $sherpa-brand-primary;
+   }
+ }
 
-    h2 {
-      color: $white;
-      margin-bottom: 0;
 
-      a {
-        color: $white;
-      }
+
+ h2 {
+     margin: 67px 0;
+
+     &.text-center {
+         &::after {
+              content: '';
+              border-bottom: 2px solid $sherpa-secondary-color;
+              width: 15%;
+              height: 2px;
+              display: block;
+              margin: .5em auto;
+            }
+     }
+ }
+
+ .container.three-col {
+
+     > div {
+         @include dropshadow();
+     }
+
+     .h2 {
+         background: #B2B2B2;
+         color: $white;
+         text-align: center;
+         font-weight: 400;
+         margin-bottom: 0;
+         @include serif;
+         padding: 1em 0;
+         font-size: 26px;
+     }
+ }
+
+ .three-columns {
+     display: flex;
+
+     .img-container {
+         height: 250px;
+         position: relative;
+         overflow: hidden;
+
+         img {
+             position: absolute;
+             left: 0;
+             top: 0;
+             width: 100%;
+         }
+     }
+
+     > div {
+         width: 33.33%;
+     }
+
+     > div:nth-child(odd) {
+         background: #E4E7E9;
+     }
+ }
+
+ .column-top {
+     background: $sherpa-brand-primary;
+     color: $white;
+     text-align: center;
+     padding: 1em 0;
+
+     p {
+         @include serif();
+         margin-bottom: 0;
+         font-size: 19px;
+     }
+ }
+
+ .extra-padding {
+     padding: 45px 70px;
+
+     p {
+         font-size: 13px;
+     }
+
+     strong {
+         font-size: 16px;
+     }
+ }
+
+
+ .bottom {
+     background: rgba(24, 76, 155, 0.7);
+     color: $white;
+     text-align: center;
+     padding: 1em 0;
+    
+    p {
+     margin-bottom: 0;
     }
-  }
+ }
 
-  .grid-container {
-    background: url('../img/grid.png') 0 0 no-repeat;
-    background-size: cover;
-    min-height: 827px;
-  }
+ .bottom-end {
+     
+     ul, p {
+         font-size: 14px;
+     }
 
-  .shadow {
-    @include dropshadow-thin();
-  }
+     ul {
+         column-count: 2;
+         list-style: none;
+         padding-left: 0;
+         margin-bottom: 0.5em;
+     }
 
-  @include media-breakpoint-down(lg) {
+     li {
+         margin-bottom: 1em;
+     }
 
-    padding-bottom: 2em;
+     p {
+         margin-bottom: 0;
+     }
+ }
 
-    .bg-grid {
-      background: $white;
-      padding-top: 2em;
-    }
 
-    .grid-container {
-      background: none;
-      text-align: center;
-      min-height: 0;
-
-      img {
-        margin: 0 auto;
-      }
-    }
-  }
 }

@@ -134,25 +134,6 @@ Animations
       width: 500px;
     }
   }
-
-  .waypoint .jumbotron .h2::after {
-    width: 0;
-    opacity: 0;
-    transition: 3s ease-in-out;
-  }
-
-  .waypoint.active {
-    .jumbotron .h2::after {
-      opacity: 1;
-      width: 360px;
-    }
-  }
-
-  .icon-row .flex-col {
-  }
-
-  .active .icon-row .flex-col {
-  }
 }
 
 @include media-breakpoint-down(md) {
@@ -962,11 +943,11 @@ $navWidth: 80px;
     justify-content: center;
     align-items: center;
     position: relative;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+    padding: .5em;
 
     > a::before {
       content: '';
-      background: red;
+      background: rgba(255,255,255,0.7);
       border-radius: 50%;
       width: 10px;
       height: 10px;
@@ -1081,7 +1062,7 @@ $navWidth: 80px;
 
   .nav-sidebar {
     width: $navWidth;
-    background: #f1f1f1;
+    background: transparent;
   }
 
   @include media-breakpoint-down(lg) {
@@ -2018,6 +1999,7 @@ ul.floorplan-nav {
     height: 750px;
     transition: height 300ms ease-in-out;
     flex: 0 auto;
+    z-index: 9999;
   }
 
   .sticky-wrapper #nav-sidebar {
@@ -2673,8 +2655,9 @@ a[data-toggle="modal"] {
   }
 }
 
-.contact-ribbon {
-  a {
-    color: $white !important;
+
+@include media-breakpoint-up(xl) {
+  .container {
+     max-width: 1400px;
   }
 }

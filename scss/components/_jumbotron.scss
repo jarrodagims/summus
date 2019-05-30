@@ -24,17 +24,6 @@
     padding-bottom: .5em;
 //     margin-top: auto;
     letter-spacing: -.5px;
-
-    &::after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      height: 2px;
-      left: 0;
-      background: $white;
-    }
   }
 
   h1, .h1 {

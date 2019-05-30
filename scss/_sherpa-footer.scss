@@ -6,20 +6,20 @@
 }
 
 #footer { 
-  background: #000;
-  color: $white;
+  background: #F4F4F4;
+  color: #606060;
   @include dropshadow();
   overflow: hidden;
+
+  .columns {
+    column-count: 2;
+  }
 
   #contact-form form div.wpcf7-validation-errors, #contact-form form div.wpcf7-acceptance-missing {
     color: red;
   }
 
-  a {
-    color: $white;
-    
-  }
-
+  
   .instagram-button {
     @include poppins();
     font-size: 10px;
@@ -31,6 +31,24 @@
     @include poppins();
     letter-spacing: 1px;
     font-size: 12px;
+  }
+
+  .col:last-child {
+    position: relative;
+    color: $white;
+
+    .extra-padding {
+      position: relative;
+    }
+
+    &::before {
+      content: '';
+      background: $sherpa-brand-primary;
+      position: absolute;
+      width: 50vw;
+      height: 100%;
+      display: block;
+    }
   }
 
   .h2 {

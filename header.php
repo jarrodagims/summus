@@ -43,6 +43,8 @@
             <div class="container-fluid">
                 <div class="v-align row">
                     <div class="col navbar-button text-center">
+
+
                         <ul class="nav navbar-nav navbar-right">
 
                             <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a></li>
@@ -57,13 +59,6 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="nav-sidebar">
-            <div class="brand-header d-lg-none">
-                <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
-            'description'
-        ); ?>" /></a>
             </div>
         </div>
 

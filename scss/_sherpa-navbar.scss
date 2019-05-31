@@ -132,11 +132,10 @@
 }
 
 .navbar-brand {
-  width: 220px;
   display: block;
 
   img {
-    width: 210px;
+    height: 138px;
   }
 
   @include media-breakpoint-down(md) {

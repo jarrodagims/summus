@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  height: 750px;
+  height: 845px;
 
   .secondary-container {
     z-index: 999;
 
     .ribbon {
       font-size: 27px;
-      padding: 1em 0;
+      padding: .5em 0;
     }
   }
   
@@ -20,6 +20,11 @@
     width: 100%;
     flex: 1;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
 
     .h2 {
       @include raleway();
@@ -31,11 +36,12 @@
       margin-top: .5em;
       margin-bottom: .5em;
       font-family: 'Cinzel', serif;
-      letter-spacing: 2px;
+      letter-spacing: 7px;
+      font-size: 47px;
     }
 
     .jumbo-content {
-      flex: 1;
+      width: 77%;
     }
 
     .secondary-nav {
@@ -182,6 +188,7 @@
     flex-direction: column;
     width: 100%;
     position: relative;
+    padding-top: 10px;
 
 
     &::before {
@@ -246,6 +253,8 @@
 
     .navbar-dark .navbar-nav .nav-link {
       color: $white;
+      text-transform: none;
+      font-size: 18px;
 
       &:hover {
         background : rgba(153, 143, 98, 0.55);

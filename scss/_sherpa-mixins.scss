@@ -38,6 +38,10 @@
   }
 }
 
+@mixin roboto() {
+  font-family: "Roboto", sans-serif;
+}
+
 @mixin raleway() {
   font-family: "Raleway", sans-serif;
 }
@@ -47,13 +51,13 @@
 }
 
 @mixin serif() {
-//   font-family: "big-caslon-fb", serif;
-  font-family: 'Cinzel', serif;
+  //   font-family: "big-caslon-fb", serif;
+  font-family: "Cinzel", serif;
 }
 
 @mixin acumin() {
   font-family: "acumin-pro-semi-condensed", sans-serif;
-} 
+}
 
 @mixin acumin-condensed() {
   font-family: "acumin-pro-semi-condensed", sans-serif;
@@ -62,7 +66,6 @@
 @mixin poppins() {
   font-family: "Poppins", sans-serif;
 }
-
 
 /* COLOR VARIABLES
 ============================================= */
@@ -207,7 +210,7 @@ $list3: $ceruleanblue 0%, $darkestblue 68.8%;
     position: relative;
     padding-right: calc(20px + 0.5em);
     &::after {
-      @include svg-arrow(_trim(#b2b2b2));
+      @include svg-chevron(_trim($sherpa-secondary-color));
       content: "";
       display: block;
       height: 20px;
@@ -222,7 +225,7 @@ $list3: $ceruleanblue 0%, $darkestblue 68.8%;
   }
 
   &:hover span::after {
-    @include svg-arrow(_trim(#cccccc));
+    @include svg-chevron(_trim($sherpa-secondary-color));
   }
 
   &[aria-expanded="true"] {

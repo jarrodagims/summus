@@ -29,11 +29,11 @@ Template Name: Home
     'description'
 ); ?>" /></a>
 
-                        <?php if( $h1 = get_field('custom_h1') ) : ?>
+                        <div class="h1"><?php if( $h1 = get_field('custom_h1') ) : ?>
 
-                        <?php echo $h1 ?>
+                            <?php echo $h1 ?>
 
-                        <?php endif; ?>
+                            <?php endif; ?></div>
                     </div>
 
                 </div>
@@ -90,7 +90,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="home-module-3">
+        <section id="home-module-3" class="home-module-3">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -299,13 +299,13 @@ Template Name: Home
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>The Law Offices of<br class="d-none d-lg-block"> Rios & Parada, PLLC:</h2>
+                        <h2>The Law Offices of Rios & Parada, PLLC:</h2>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="home-module-4">
+        <section id="home-module-4" class="home-module-4">
             <div class="container">
                 <div class="row">
                     <div class="container">
@@ -314,38 +314,43 @@ Template Name: Home
                                 <img src="<?=IMGURL?>justice.jpg" alt="">
                             </div>
                             <div class="col">
-                                <h2>A Law Firm That Fights For Justice</h2>
+                                <div class="extra-padding">
+                                    <h2>A Law Firm That Fights For Justice</h2>
 
-                                <strong><em>The Law Offices of Rios & Parada, PLLC:<br />
-                                        A Law Firm That Fights For Justice</em></strong>
+                                    <p class="blurb"><strong><em>The Law Offices of Rios & Parada, PLLC:<br />
+                                                A Law Firm That Fights For Justice</em></strong></p>
 
-                                <p>
-                                    The Rios & Parada law firm is made up of local attorneys who are closely familiar
-                                    with the
-                                    city
-                                    and the great state of Texas. Our three attorneys attended law school at the
-                                    prestigious
-                                    Thurgood Marshall School of Law in Houston, Texas.
-                                </p>
+                                    <p>
+                                        The Rios & Parada law firm is made up of local attorneys who are closely
+                                        familiar
+                                        with the
+                                        city
+                                        and the great state of Texas. Our three attorneys attended law school at the
+                                        prestigious
+                                        Thurgood Marshall School of Law in Houston, Texas.
+                                    </p>
 
-                                <p>
-                                    Gabriel Seañez and Ricardo Rios are both from El Paso and grew up in the city. Tony
-                                    Parada
-                                    was
-                                    raised in Huntsville, Texas but focused intensely on immigration law. Mr. Parada’s
-                                    expertise
-                                    in
-                                    this area of law led him to El Paso, Texas where he became the immigration
-                                    specialist of the
-                                    firm.
-                                </p>
+                                    <p>
+                                        Gabriel Seañez and Ricardo Rios are both from El Paso and grew up in the city.
+                                        Tony
+                                        Parada
+                                        was
+                                        raised in Huntsville, Texas but focused intensely on immigration law. Mr.
+                                        Parada’s
+                                        expertise
+                                        in
+                                        this area of law led him to El Paso, Texas where he became the immigration
+                                        specialist of the
+                                        firm.
+                                    </p>
 
-                                <p>
-                                    Together, our team of attorneys forms the region’s most experienced and
-                                    knowledgeable team
-                                    of
-                                    legal help in personal injury, immigration, and family law.
-                                </p>
+                                    <p>
+                                        Together, our team of attorneys forms the region’s most experienced and
+                                        knowledgeable team
+                                        of
+                                        legal help in personal injury, immigration, and family law.
+                                    </p>
+                                </div>
 
                             </div>
 
@@ -355,7 +360,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="home-module-5">
+        <section id="home-module-5" class="home-module-5">
             <div class="shadow">
                 <div class="container">
                     <div class="row">
@@ -373,37 +378,41 @@ Template Name: Home
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <p>
-                            <strong>
-                                <em>Our commitment is to the law and to the individual. Every case is different and
-                                    every
-                                    case
-                                    is
-                                    worth fighting.</em>
+                        <div class="extra-padding">
+                            <p class="blurb">
+                                <strong>
+                                    <em>Our commitment is to the law and to the individual. Every case is different and
+                                        every
+                                        case
+                                        is
+                                        worth fighting.</em>
 
-                            </strong>
-                        </p>
+                                </strong>
+                            </p>
 
-                        <p>
-                            There is a lot at stake, whether it is your personal health, your freedom, or your family’s
-                            future.
-                            These matters affect your life. For these reasons, we uphold the highest standards of
-                            excellence
-                            when it
-                            comes to serving our clients and representing their individual case. We offer free
-                            consultations for
-                            family law and personal injury cases.
-                        </p>
+                            <p>
+                                There is a lot at stake, whether it is your personal health, your freedom, or your
+                                family’s
+                                future.
+                                These matters affect your life. For these reasons, we uphold the highest standards of
+                                excellence
+                                when it
+                                comes to serving our clients and representing their individual case. We offer free
+                                consultations for
+                                family law and personal injury cases.
+                            </p>
 
-                        <p>
-                            We fight honestly. Every case begins by telling you the truth about your situation. We then
-                            explain
-                            the
-                            next steps and how we will represent you. As our client, we keep open communication to
-                            ensure you
-                            are
-                            always aware of the standing and status of your pending case or developments.
-                        </p>
+                            <p>
+                                We fight honestly. Every case begins by telling you the truth about your situation. We
+                                then
+                                explain
+                                the
+                                next steps and how we will represent you. As our client, we keep open communication to
+                                ensure you
+                                are
+                                always aware of the standing and status of your pending case or developments.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -414,7 +423,7 @@ Template Name: Home
         </div>
 
 
-        <section class="home-module-6">
+        <section id="home-module-6" class="home-module-6">
 
             <div class="container">
                 <div class="row">
@@ -454,7 +463,7 @@ Template Name: Home
 
         </section>
 
-        <section class="home-module-7">
+        <section id="home-module-7" class="home-module-7">
             <div class="container">
                 <div class="row">
                     <div class="container">
@@ -500,7 +509,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="home-module-8">
+        <section id="home-module-8" class="home-module-8">
             <div class="secondary-nav">
 
                 <iframe
@@ -510,8 +519,6 @@ Template Name: Home
             </div>
         </section>
 
-    </div>
-</div>
 
 
-<?php get_footer();?>
+        <?php get_footer();?>

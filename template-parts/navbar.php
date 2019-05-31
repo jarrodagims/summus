@@ -16,27 +16,15 @@
             </div>
         </li>
         <li>
-            <a class="sidebar-link" href="#home-module-4">
-            </a>
-            <div class="navbar-collapse collapse show tab">
-                <ul class="nav navbar-nav">
-                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
-                        class="menu-item current-menu-item active nav-item">
-                        <a title="Our
-                            Services" href="#home-module-2" class="sidebar-link nav-link">Our
-                            Services</a></li>
-                </ul>
-            </div>
-        </li>
-        <li>
             <a class="sidebar-link" href="#home-module-3">
             </a>
             <div class="navbar-collapse collapse show tab">
                 <ul class="nav navbar-nav">
                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
                         class="menu-item current-menu-item active nav-item">
-                        <a title="Bindery Finishing" href="#home-module-3" class="sidebar-link nav-link">Bindery
-                            Finishing</a></li>
+                        <a title="Our
+                            Services" href="#home-module-3" class="sidebar-link nav-link">Our
+                            Services</a></li>
                 </ul>
             </div>
         </li>
@@ -47,8 +35,19 @@
                 <ul class="nav navbar-nav">
                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
                         class="menu-item current-menu-item active nav-item">
-                        <a title="Booklet Binding" href="#home-module-4" class="sidebar-link nav-link">Booklet
-                            Binding</a></li>
+                        <a title="About Us" href="#home-module-4" class="sidebar-link nav-link">About Us</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a class="sidebar-link" href="#home-module-6">
+            </a>
+            <div class="navbar-collapse collapse show tab">
+                <ul class="nav navbar-nav">
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                        class="menu-item current-menu-item active nav-item">
+                        <a title="Booklet Binding" href="#home-module-6" class="sidebar-link nav-link">Schedule a
+                            Consultation</a></li>
                 </ul>
             </div>
         </li>

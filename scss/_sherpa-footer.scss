@@ -11,12 +11,29 @@
   @include dropshadow();
   overflow: hidden;
 
+  .blurb {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: $sherpa-brand-primary; 
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-bottom: .5em;
+    display: block;
+  }
+
   .columns {
     column-count: 2;
   }
 
   #contact-form form div.wpcf7-validation-errors, #contact-form form div.wpcf7-acceptance-missing {
     color: red;
+  }
+
+  span.sub-title {
+    @include Poppins();
+    margin-bottom: 1em;
+    display: block;
   }
 
   
@@ -39,6 +56,7 @@
 
     .extra-padding {
       position: relative;
+      padding-left: 126px;
     }
 
     &::before {
@@ -54,10 +72,10 @@
   .h2 {
     display: block;
     margin-bottom: 1em;
-    @include montserrat();
     letter-spacing: 0;
     font-weight: 300;
     font-size: 28px;
+    @include serif();
   }
 
   .extra-padding {
@@ -65,7 +83,7 @@
   }
 
   .col .extra-padding {
-    padding: 76px 126px;
+    padding: 76px 0;
   }
 
 
@@ -120,7 +138,8 @@
 
   p {
    letter-spacing: 0;
-   font-size: 14px;
+   font-size: 15px;
+   @include montserrat();
   }
 
   p img {

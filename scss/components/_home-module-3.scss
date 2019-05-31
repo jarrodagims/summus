@@ -15,12 +15,16 @@
 
  h2 {
      margin: 67px 0;
+     letter-spacing: 0;
+     font-size: 27px;
+     line-height: 1em;
+     line-height: 1.5;
 
      &.text-center {
          &::after {
               content: '';
               border-bottom: 2px solid $sherpa-secondary-color;
-              width: 15%;
+              width: 10.6%;
               height: 2px;
               display: block;
               margin: .5em auto;
@@ -50,15 +54,15 @@
      display: flex;
 
      .img-container {
-         height: 250px;
+         height: 360px;
          position: relative;
-         overflow: hidden;
+         overflow: visible;
 
          img {
              position: absolute;
              left: 0;
              top: 0;
-             width: 100%;
+             height: 100%;
          }
      }
 
@@ -75,7 +79,7 @@
      background: $sherpa-brand-primary;
      color: $white;
      text-align: center;
-     padding: 1em 0;
+     padding: 2em 0;
 
      p {
          @include serif();
@@ -85,7 +89,7 @@
  }
 
  .extra-padding {
-     padding: 45px 70px;
+     padding: 40px 60px;
 
      p {
          font-size: 13px;
@@ -105,6 +109,7 @@
     
     p {
      margin-bottom: 0;
+     font-size: 15px;
     }
  }
 

@@ -921,7 +921,7 @@ span.brand {
   color: $sherpa-brand-primary;
 }
 
-$navWidth: 80px;
+$navWidth: 60px;
 
 #nav-sidebar {
   width: $navWidth;
@@ -2173,6 +2173,9 @@ a[data-toggle="modal"] {
 
   p {
     margin-bottom: 0;
+    font-size: 18px;
+    letter-spacing: .5px;
+    @include raleway();
   }
   a {
     color: $white;
@@ -2665,6 +2668,11 @@ a[data-toggle="modal"] {
 
 @include media-breakpoint-up(xl) {
   .container {
-     max-width: 1400px;
+    max-width: 1400px;
+    height: 100%;
+
+    .row {
+      height: 100%;
+    }
   }
 }

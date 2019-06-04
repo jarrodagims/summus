@@ -57,6 +57,14 @@
   }
 
   @include media-breakpoint-down(lg) {
+
+    .jumbo-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
     h2, .h2 {
 
       font-size: 15px;
@@ -70,6 +78,11 @@
     .btn-transparent {
       font-size: 10px !important;
     }
+  }
+
+  .h1 {
+    margin: 0 auto;
+    text-align: center;
   }
 } 
 

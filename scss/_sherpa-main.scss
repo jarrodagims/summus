@@ -1066,19 +1066,19 @@ $navWidth: 60px;
   }
 
   @include media-breakpoint-down(lg) {
-    .navbar-collapse {
-      left: calc(-100vw + 90px);
-      width: 100vw;
-    }
+//     .navbar-collapse {
+//       left: calc(-100vw + 90px);
+//       width: 100%;
+//     }
   }
 
   @include media-breakpoint-down(md) {
     flex-direction: column;
     overflow: hidden;
 
-    .navbar-collapse {
-      top: 55px;
-    }
+//     .navbar-collapse {
+//       top: 55px;
+//     }
 
     .dropdown-menu {
       position: relative;
@@ -1113,7 +1113,7 @@ $navWidth: 60px;
 
     .navbar-brand img {
       width: auto;
-      height: 45px;
+      height: 71px;
       margin: 0 auto;
     }
 
@@ -1133,7 +1133,11 @@ $navWidth: 60px;
 
     .navbar-dark .navbar-toggler {
       width: $navWidth;
-      position: relative;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      border: 0;
+      border-color: transparent;
 
       .navbar-toggler-icon {
         transform: translateX(-50%) translateY(-50%);
@@ -1169,6 +1173,17 @@ $navWidth: 60px;
 
     .brand-header {
       padding: 0 20px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    #nav-sidebar {
+      display: none;
+    }
+
+    .nav-sidebar {
+      display: none;
     }
   }
 }
@@ -2087,7 +2102,8 @@ ul.expand {
   }
 
   @include media-breakpoint-down(lg) {
-    text-align: left;
+    text-align: center;
+    font-size: 15px;
   }
 }
 

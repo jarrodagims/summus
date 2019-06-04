@@ -21,4 +21,19 @@
   ul {
     text-align: center;
   }
+
+  @include media-breakpoint-down(lg) {
+    h2.h4 {
+      font-size: 14px;
+
+      span {
+        padding-right: calc(10px + 0.5em);
+      }
+
+      span::after {
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
 }

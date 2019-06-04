@@ -43,19 +43,9 @@
             <div class="container-fluid">
                 <div class="v-align row">
                     <div class="col navbar-button text-center">
-
-
                         <ul class="nav navbar-nav navbar-right">
-
-                            <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a></li>
-                            <li class="nav-item menu-item directions">
-                                <a href="<?=SITEURL?>/contact-us/"><span
-                                        class="nav-link"><em><?=get_option('sherpa_business_address')?></em></span></a>
-                            </li>
-                            <li class="nav-item menu-item contact"><a
-                                    href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"
-                                    class="nav-link"><span><?php printPhone(); ?></span></a>
-                            </li>
+                            <li>ESPAÑOL</li>
+                            <li><a href="tel:<?php printPhone();?>">TEL: <?php printPhone();?></a></li>
                         </ul>
                     </div>
                 </div>
@@ -85,12 +75,12 @@
                                             endif; ?></div>
                                                 <img src="<?=IMGURL?>find-us-on.svg" alt="Find Us On">
                                                 <ul class="list-inline social-media sm">
-                                                    <li><a href="https://www.facebook.com/UniversalGraphicsInc/"
+                                                    <li><a href="https://www.facebook.com/pages/The-Law-Offices-of-Rios-Parada-PLLC/702710576472573"
                                                             class="facebook-button social-media-button sm square lighten external"
                                                             target="_blank"><i
                                                                 class="fab fa-facebook-f fa-fw "><span>Facebook</span></i></a>
                                                     </li>
-                                                    <li><a href="https://twitter.com/gil_the_printer"
+                                                    <li><a href="https://twitter.com/riosparadalaw"
                                                             class="twitter-button social-media-button sm square lighten external"
                                                             target="_blank"><i
                                                                 class="fab fa-twitter fa-fw "><span>Twitter</span></i></a>

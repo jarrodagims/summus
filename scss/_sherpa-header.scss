@@ -36,18 +36,18 @@
     }
 
     @include media-breakpoint-down(md) {
-        background: $black;
+        background: rgba(80, 83, 91, 0.51);
         color: $white;
         padding-left: 5px;
         padding-right: 5px;
+        position: absolute;
+        z-index: 99;
 
         .navbar-right {
             margin-bottom: 0;
             flex-wrap: wrap;
-            
-            li:first-child {
-                
-            }
+            display: flex;
+            justify-content: space-between;
         }
 
         a {
@@ -65,22 +65,13 @@
     display: flex;
     justify-content: space-between;
     padding: 0 0;
-
-    @include media-breakpoint-down(md) {
-        padding: .5em 0;
-    }
-
-    @include media-breakpoint-down(lg) {
-        padding: 1em 0;
-    }
 }
 
 body.internal {
     @include media-breakpoint-up(lg) {
         .top-header {
             background: $white;
-            color: $black;
-            padding: 2em 0;
+            color: $black; 
         }
     }
 }

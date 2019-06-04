@@ -24,8 +24,8 @@ Template Name: Home
 
                     <div>
 
-                        <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img
-                                src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
+                        <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg"
+                                alt="<?php echo get_bloginfo(
     'description'
 ); ?>" /></a>
 
@@ -42,7 +42,7 @@ Template Name: Home
         </div>
         <div class="secondary-container">
             <div class="secondary-nav-title">
-                <div class="ribbon">Free Consultations On Personal Injury & Family Cases</div>
+                <div class="ribbon">Free Consultations<br class="d-lg-none"> On Personal Injury & Family Cases</div>
             </div>
             <div class="secondary-nav">
                 <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
@@ -94,7 +94,7 @@ Template Name: Home
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2 class="text-center">The Law Offices of<br class="d-none d-lg-block">
+                        <h2 class="text-center">The Law Offices of<br>
                             Rios & Parada, PLLC</h2>
                     </div>
                 </div>

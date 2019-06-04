@@ -135,5 +135,18 @@
      }
  }
 
+ @include media-breakpoint-down(lg) {
+    h2 {
+      font-size: 14px;
+      margin: 2em 0;
+
+                   &.text-center {
+                       &::after {
+                            display: none;
+                          }
+                   }
+    }
+ }
+
 
 }

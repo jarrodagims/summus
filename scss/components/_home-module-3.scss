@@ -93,6 +93,10 @@
 
      p {
          font-size: 13px;
+
+         &:last-child {
+             margin-bottom: 0;
+         }
      }
 
      strong {
@@ -136,17 +140,169 @@
  }
 
  @include media-breakpoint-down(lg) {
+
+    .bottom-end ul {
+        text-align: left;
+    }
+
     h2 {
       font-size: 14px;
       margin: 2em 0;
 
-                   &.text-center {
-                       &::after {
-                            display: none;
-                          }
-                   }
+       &.text-center {
+           &::after {
+                display: none;
+              }
+       }
+    }
+
+    .bottom {
+        background: $sherpa-secondary-color;
+    }
+
+    .container.three-col {
+        padding: 0 0;
+
+        .row {
+            margin: 0 0;
+
+            .col {
+                padding: 0 0;
+            }
+
+            .extra-padding {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        .h2 {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+
+    .three-columns {
+        flex-direction: column;
+
+        >div {
+            flex: 1;
+            width: auto;
+        }
+
+        .extra-padding {
+            padding: 1.5em;
+            text-align: center;
+            background: none;
+
+            strong {
+                font-size: 14px;
+            }
+        }
+
+        > div:nth-child(odd) {
+            background: $white;
+        }
+        
+
+        .m-row {
+            display: flex;
+            flex-direction: row;
+            background: url('../img/bandage-knee.jpg') 0 0 no-repeat;
+            background-size: cover;
+            height: 153px;
+
+            > div {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            
+        }
+
+        .column-top {
+            background: rgba($sherpa-brand-primary, 0.92);
+
+            p {
+                 font-size: 12px;
+                 position: relative;
+                 padding-right: 18px;
+
+                &::after {
+                  @include svg-arrow(_trim($white));
+                  content: "";
+                  display: block;
+                  height: 12px;
+                  width: 12px;
+                  position: absolute;
+                  right: 0;
+                  top: calc(50% + 1px);
+                  transform: translateY(-50%);
+                  transition: transform ease-in-out 300ms;
+                  background-repeat: no-repeat;
+                }
+            }
+        }
+
+        .img-container {
+            height: auto;
+
+            img {
+                position: relative;
+                display: none;
+            }
+        }
+
+        .immigration-lawyer {
+            .m-row {
+                background: url('../img/passport-m.jpg') 0 0 no-repeat;
+                 background-size: cover;
+                flex-direction: row-reverse;
+            }
+        }
+
+        .immigration-lawyer .extra-padding {
+            display: none;
+        }
+
+        .family-lawyer .extra-padding {
+            display: none;
+        }
+
+        .family-lawyer {
+            .m-row {
+                background: none;
+
+                .column-top {
+                    background: $sherpa-brand-primary;
+                }
+            }
+
+            .img-container {
+                background: url('../img/family-law.jpg') 0 0 no-repeat;
+                background-size: cover;
+            }
+
+            
+        }
     }
  }
 
+ @include media-breakpoint-down(lg) {
+    .contact-ribbon {
+        background: $white;
+        text-align: center;
+        padding: 1em 0;
+        margin-top: 0;
 
+        p {
+          display: flex;
+          justify-content: center;
+          font-size: 12px;
+          padding: 0 0;
+        }
+    }
+  }
 }

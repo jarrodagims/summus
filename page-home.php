@@ -47,6 +47,14 @@ Template Name: Home
             <div class="secondary-nav">
                 <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
             </div>
+
+            <div class="d-lg-none tertiary-nav">
+                <ul>
+                    <li><a href="#">Personal Injury</a>
+                    <li><a href="#">Immigration</a></li>
+                    <li><a href="#">Family Law</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -104,17 +112,20 @@ Template Name: Home
                 <div>
                     <div class="row">
                         <div class="col">
-                            <div class="h2">Overview of Our Services: Experienced Attorneys That Fight For You</div>
+                            <div class="h2">Overview of Our Services: Experienced<br class="d-block d-lg-none">
+                                Attorneys That Fight For You</div>
                         </div>
                     </div>
                     <div class="three-columns">
                         <div>
-                            <div class="img-container">
-                                <img src="<?=IMGURL?>knees.jpg" alt="">
-                            </div>
+                            <div class="m-row">
+                                <div class="img-container">
+                                    <img src="<?=IMGURL?>knees.jpg" alt="">
+                                </div>
 
-                            <div class="column-top">
-                                <p>Personal Injury</p>
+                                <div class="column-top">
+                                    <p>Personal Injury</p>
+                                </div>
                             </div>
 
                             <div class="extra-padding">
@@ -143,13 +154,16 @@ Template Name: Home
 
 
                         </div>
-                        <div>
-                            <div class="img-container">
-                                <img src="<?=IMGURL?>passport.jpg" alt="">
-                            </div>
+                        <div class="immigration-lawyer">
 
-                            <div class="column-top">
-                                <p>Immigration</p>
+                            <div class="m-row">
+                                <div class="img-container">
+                                    <img src="<?=IMGURL?>passport.jpg" alt="">
+                                </div>
+
+                                <div class="column-top">
+                                    <p>Immigration</p>
+                                </div>
                             </div>
 
                             <div class="extra-padding">
@@ -180,16 +194,17 @@ Template Name: Home
                                     change your legal status.
                                 </p>
                             </div>
-
-
                         </div>
-                        <div>
-                            <div class="img-container">
-                                <img src="<?=IMGURL?>happy-people.jpg" alt="">
-                            </div>
+                        <div class="family-lawyer">
 
-                            <div class="column-top">
-                                <p>Family Law</p>
+                            <div class="m-row">
+                                <div class="img-container">
+                                    <img src="<?=IMGURL?>happy-people.jpg" alt="">
+                                </div>
+
+                                <div class="column-top">
+                                    <p>Family Law</p>
+                                </div>
                             </div>
 
                             <div class="extra-padding">
@@ -285,11 +300,8 @@ Template Name: Home
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col">
-                            <p>
-                                We can help. <a href="<?=SITEURL?>/contact-us/">Contact us today</a>.
-                            </p>
+                            <p>We can help. <a href="<?=SITEURL?>/contact-us/">Contact us today</a>.</p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -311,7 +323,10 @@ Template Name: Home
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img src="<?=IMGURL?>justice.jpg" alt="">
+                                <picture>
+                                    <source srcset="<?=IMGURL?>justice.jpg" media="(min-width: 992px)">
+                                    <img src="<?=IMGURL?>lawyer-sm.jpg" />
+                                </picture>
                             </div>
                             <div class="col">
                                 <div class="extra-padding">

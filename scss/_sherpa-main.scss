@@ -2199,6 +2199,20 @@ a[data-toggle="modal"] {
       color: $white;
     }
   }
+
+  @include media-breakpoint-down(lg) {
+    background: $white;
+    text-align: center;
+    padding: 1em 0;
+
+    p {
+      display: flex;
+      justify-content: center;
+      font-size: 12px;
+      padding: 0 0;
+    }
+
+  }
 }
 
 .internal-banner {

@@ -262,8 +262,7 @@ Template Name: Home
                             <div class="bottom-end  extra-padding">
                                 <ul>
                                     <li>Deportation defense</li>
-                                    <li>Motions for bonds &</li>
-                                    <li>bond processing</li>
+                                    <li>Motions for bonds & bond processing</li>
                                     <li>DACA renewals</li>
                                     <li>Citizenship applications</li>
                                 </ul>

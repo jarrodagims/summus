@@ -310,10 +310,6 @@ body {
           }
         }
 
-        ul {
-          color: #808080;
-          @include acumin();
-        }
 
         @include media-breakpoint-up(md) {
           h1 {
@@ -610,6 +606,7 @@ body {
         ul:not(.flex-row) {
           list-style: none;
           padding-left: 1em;
+          color: #808080;
 
           li {
             position: relative;
@@ -1082,6 +1079,8 @@ $navWidth: 60px;
 
     .dropdown-menu {
       position: relative;
+      margin-top: 0;
+      padding: 0 0;
     }
 
     #nav-sidebar > ul.list-unstyled > li:first-child > a {
@@ -2206,6 +2205,7 @@ a[data-toggle="modal"] {
     font-size: 18px;
     letter-spacing: .5px;
     @include raleway();
+    color: #4D4D4D;
   }
   a {
     color: $white;
@@ -2233,6 +2233,10 @@ a[data-toggle="modal"] {
   display: flex;
   background: url("../img/bg-top-banner.jpg") 0 0 no-repeat;
   background-size: cover;
+
+  p {
+    color: $white;
+  }
 
   .navbar-brand {
     display: block;

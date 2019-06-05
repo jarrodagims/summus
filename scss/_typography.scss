@@ -52,6 +52,7 @@ p {
   @include roboto();
   font-size: 17px;
   margin-bottom: 2em;
+  color: #808080;
 
   @include media-breakpoint-down(md) {
     font-size: 15px;

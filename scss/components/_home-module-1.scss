@@ -239,6 +239,7 @@
       li {
         flex: 1;
         border-right: 1px solid #B2BBBF;
+        z-index: 99999;
         
 
         &:last-child {

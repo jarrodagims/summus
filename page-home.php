@@ -50,9 +50,9 @@ Template Name: Home
 
             <div class="d-lg-none tertiary-nav">
                 <ul>
-                    <li><a href="#">Personal Injury</a>
-                    <li><a href="#">Immigration</a></li>
-                    <li><a href="#">Family Law</a></li>
+                    <li><a href="<?=SITEURL?>/personal-injury/">Personal Injury</a>
+                    <li><a href="<?=SITEURL?>/immigration/">Immigration</a></li>
+                    <li><a href="<?=SITEURL?>/family-law/">Family Law</a></li>
                 </ul>
             </div>
         </div>

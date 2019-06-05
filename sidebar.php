@@ -23,7 +23,9 @@
                         </div>
 
                         <div class="column-top">
-                            <p>Personal Injury</p>
+                            <a href="<?=SITEURL?>/personal-injury/">
+                                <p>Personal Injury</p>
+                            </a>
                         </div>
                     </div>
 
@@ -36,7 +38,9 @@
                         </div>
 
                         <div class="column-top">
-                            <p>Immigration</p>
+                            <a href="<?=SITEURL?>/immigration/">
+                                <p>Immigration</p>
+                            </a>
                         </div>
                     </div>
 
@@ -50,7 +54,9 @@
                         </div>
 
                         <div class="column-top">
-                            <p>Family Law</p>
+                            <a href="<?=SITEURL?>/family-law/">
+                                <p>Family Law</p>
+                            </a>
                         </div>
                     </div>
 

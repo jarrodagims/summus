@@ -339,7 +339,6 @@
      background: $sherpa-brand-primary;
      color: $white;
      text-align: center;
-     padding: 2em 0;
 
          p {
              @include serif();
@@ -354,6 +353,19 @@
         >div {
             flex: 1;
             width: auto;
+
+            a {
+                color: $white;
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+
+                &:hover {
+                    background: $sherpa-secondary-color;
+                }
+            }
         }
 
         .extra-padding {

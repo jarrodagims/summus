@@ -377,6 +377,10 @@ the right sidebar including social icons address and phone
     margin-top: 0px;
     background: rgba(0, 0, 0, 0.95);
   }
+
+  .dropdown-menu {
+    z-index: 9999;
+  }
 }
 
 .dropdown-item {

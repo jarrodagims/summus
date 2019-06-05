@@ -824,7 +824,7 @@ body #main {
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .page-template-default,
   .blog,
   .error-404,
@@ -1178,12 +1178,22 @@ $navWidth: 60px;
 
   @include media-breakpoint-down(lg) {
 
+    .navbar-dark .navbar-toggler {
+      top: 70px;
+    }
+
     #nav-sidebar {
       display: none;
     }
 
     .nav-sidebar {
       display: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .navbar-dark .navbar-toggler {
+      top: 65px;
     }
   }
 }
@@ -1992,6 +2002,10 @@ ul.floorplan-nav {
 //   }
 // }
 
+// .content {
+//   overflow: hidden;
+// }
+
 @include media-breakpoint-up(lg) {
   .internal .sticky-wrapper,
   .internal #nav-sidebar {
@@ -2288,17 +2302,20 @@ a[data-toggle="modal"] {
   }
   @include media-breakpoint-down(md) {
 
+    .banner .banner-content {
+      padding: 40px 0 0;
+    }
+
+    .header {
+      padding: 2em 0 0;
+    }
+
     .banner .row {
       width: auto;
     }
-
     
     .banner {
       height: auto;
-
-      &.banner-internal {
-        height: 250px;
-      }
     }
   }
 }
@@ -2709,5 +2726,15 @@ a[data-toggle="modal"] {
     .row {
       height: 100%;
     }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  .secondary-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
   }
 }

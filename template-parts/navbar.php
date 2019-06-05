@@ -1,7 +1,5 @@
 <div id="nav-sidebar" class="sticky">
     <ul class="list-unstyled">
-
-
         <li>
             <a class="sidebar-link" href="#home-module-1">
             </a>

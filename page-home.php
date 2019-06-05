@@ -44,7 +44,7 @@ Template Name: Home
             <div class="secondary-nav-title">
                 <div class="ribbon">Free Consultations<br class="d-lg-none"> On Personal Injury & Family Cases</div>
             </div>
-            <div class="secondary-nav d-none d-lg-block">
+            <div class="secondary-nav">
                 <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
             </div>
 

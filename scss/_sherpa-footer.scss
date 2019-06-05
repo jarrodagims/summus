@@ -252,6 +252,8 @@
     .col-get-in-touch {
       .extra-padding {
         padding-bottom: 0;
+        padding-top: 2em;
+        padding-bottom: 2em;
       }
     }
 
@@ -267,9 +269,9 @@
     .navbar-brand img {
       height: 69px;
     }
-
+ 
     .h2 {
-      font-size: 18px;
+      font-size: 15px;
     }
 
     .btn {
@@ -278,6 +280,10 @@
 
     span.sub-title {
       font-size: 10px;
+    }
+
+    p {
+      font-size: 12px;
     }
 
 
@@ -320,14 +326,27 @@
 
 
   @include media-breakpoint-down(lg) {
-    background: #1A1A1A;
+    background: $white;
     text-align: center;
+
+    .col:last-child {
+      padding: 0 0;
+    }
 
     .col p:last-child {
       margin-bottom: 0;
     }
 
-   
+    .blurb {
+      font-size: 16px;
+    }
+
+    .col:last-child .extra-padding {
+      padding-left: 0;
+      background: $sherpa-brand-primary;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
     .form-group {
       text-align: center;
@@ -401,6 +420,23 @@
     } 
 
   }
+
+  @include media-breakpoint-down(lg) {
+    .columns {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      height: 43px;
+    }
+
+    .col .extra-padding {
+      padding-top: 2em;
+    }
+  }
+
+  
 
 }
 

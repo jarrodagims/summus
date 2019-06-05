@@ -36,13 +36,37 @@
  
 
   @include media-breakpoint-down(lg) {
+
+    p.blurb {
+      font-size: 14px;
+    }
+
+    .extra-padding {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .container:last-child .col {
+      padding: 2em 0; 
+    }
+
     .row .col:first-child {
       order: -1;
     }
 
+    p {
+      font-size: 14px;
+    }
+
     img {
       margin-top: 0;
-      margin-bottom: 2em;
+      margin-bottom: .25em;
+      height: 66px;
+    }
+
+    .shadow h2 {
+      font-size: 14px;
+      line-height: 1.5;
     }
 
   }

@@ -8,6 +8,10 @@
 
    a {
      color: $sherpa-brand-primary;
+
+     &:hover {
+         color: $sherpa-brand-primary;
+     }
    }
  }
 
@@ -305,4 +309,134 @@
         }
     }
   }
+}
+
+
+#sidebar {
+    .container.three-col {
+        padding: 0 0;
+
+        .row {
+            margin: 0 0;
+
+            .col {
+                padding: 0 0;
+            }
+
+            .extra-padding {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        .h2 {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+
+    .column-top {
+     background: $sherpa-brand-primary;
+     color: $white;
+     text-align: center;
+     padding: 2em 0;
+
+         p {
+             @include serif();
+             margin-bottom: 0;
+             font-size: 19px;
+         }
+     }
+
+    .three-columns {
+        flex-direction: column;
+
+        >div {
+            flex: 1;
+            width: auto;
+        }
+
+        .extra-padding {
+            padding: 1.5em;
+            text-align: center;
+            background: none;
+
+            strong {
+                font-size: 14px;
+            }
+        }
+
+        > div:nth-child(odd) {
+            background: $white;
+        }
+        
+
+        .m-row {
+            display: flex;
+            flex-direction: row;
+            background: url('../img/bandage-knee.jpg') 0 0 no-repeat;
+            background-size: cover;
+            height: 200px;
+
+            > div {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            
+        }
+
+        .column-top {
+            background: rgba($sherpa-brand-primary, 0.92);
+
+            p {
+                 font-size: 16px;
+                 position: relative;
+            }
+        }
+
+        .img-container {
+            height: auto;
+
+            img {
+                position: relative;
+                display: none;
+            }
+        }
+
+        .immigration-lawyer {
+            .m-row {
+                background: url('../img/passport-m.jpg') 0 0 no-repeat;
+                 background-size: cover;
+                flex-direction: row-reverse;
+            }
+        }
+
+        .immigration-lawyer .extra-padding {
+            display: none;
+        }
+
+        .family-lawyer .extra-padding {
+            display: none;
+        }
+
+        .family-lawyer {
+            .m-row {
+                background: none;
+
+                .column-top {
+                    background: $sherpa-brand-primary;
+                }
+            }
+
+            .img-container {
+                background: url('../img/family-law.jpg') 0 0 no-repeat;
+                background-size: cover;
+            }
+
+            
+        }
+    }
 }

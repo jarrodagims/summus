@@ -2217,13 +2217,21 @@ a[data-toggle="modal"] {
 
 .internal-banner {
   display: flex;
+  background: url("../img/bg-top-banner.jpg") 0 0 no-repeat;
+  background-size: cover;
+
+  .navbar-brand {
+    display: block;
+
+    img {
+      height: 92px;
+    }
+  }
 
   .banner {
     width: 100%;
-    height: 316px;
     z-index: 1;
-    background: url("../img/internal-header-banner.jpg") 0 0 no-repeat;
-    background-size: cover;
+   
     text-align: center;
     color: $white;
     display: flex;
@@ -2239,6 +2247,7 @@ a[data-toggle="modal"] {
 
     .banner-content {
       position: relative;
+      padding: 2em 0;
     }
 
     .banner-content,
@@ -2275,10 +2284,6 @@ a[data-toggle="modal"] {
         letter-spacing: 0.5px;
         color: $white;
       }
-    }
-
-    img {
-      height: 10px;
     }
   }
   @include media-breakpoint-down(md) {

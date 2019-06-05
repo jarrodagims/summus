@@ -380,7 +380,7 @@ the right sidebar including social icons address and phone
 }
 
 .dropdown-item {
-  font-size: 12px;
+  font-size: 15px;
   text-transform: none;
   letter-spacing: 0;
 }
@@ -405,7 +405,16 @@ the right sidebar including social icons address and phone
     @include montserrat();
 
     .h1 {
-      font-size: 26px;
+      font-size: 34px;
+      text-transform: uppercase;
+      @include serif();
+      margin-top: 1.25em;
+      letter-spacing: 4px;
+    }
+
+    p {
+      @include raleway();
+      font-size: 19px;
     }
   }
 

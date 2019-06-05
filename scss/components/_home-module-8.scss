@@ -35,4 +35,15 @@
       margin-top: auto;
     }
   }
+
+   @include media-breakpoint-down(lg) { 
+
+       .secondary-nav {
+         height: 130px;
+       }
+       
+      .secondary-nav .navbar-sherpa {
+        display: none;
+      }
+   }
 }

@@ -55,50 +55,5 @@
 
         <div class="content">
             <?php if(!is_front_page() && !is_page_template('page-grid.php')) :?>
-            <section class="internal-banner waypoint">
-                <?php echo get_template_part('template-parts/navbar'); ?>
-                <div class="jumbo-container">
-                    <?php echo get_template_part('template-parts/top-header'); ?>
-                    <div class="banner banner-internal">
-                        <div class="banner-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="d-none d-lg-flex">
-                                            <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
-                                        </div>
-                                        <div class="header">
-                                            <div class="header-content">
-                                                <div class="h1"><?php if(!is_home()) :
-                                            echo get_the_title();
-                                            else: echo 'Blog';
-                                            endif; ?></div>
-                                                <img src="<?=IMGURL?>find-us-on.svg" alt="Find Us On">
-                                                <ul class="list-inline social-media sm">
-                                                    <li><a href="https://www.facebook.com/pages/The-Law-Offices-of-Rios-Parada-PLLC/702710576472573"
-                                                            class="facebook-button social-media-button sm square lighten external"
-                                                            target="_blank"><i
-                                                                class="fab fa-facebook-f fa-fw "><span>Facebook</span></i></a>
-                                                    </li>
-                                                    <li><a href="https://twitter.com/riosparadalaw"
-                                                            class="twitter-button social-media-button sm square lighten external"
-                                                            target="_blank"><i
-                                                                class="fab fa-twitter fa-fw "><span>Twitter</span></i></a>
-                                                    </li>
-                                                    <li><a href="https://www.instagram.com/universalgraphicsinc/"
-                                                            class="instagram-button social-media-button sm square lighten external"
-                                                            target="_blank"><i
-                                                                class="fab fa-instagram fa-fw "><span>Instagram</span></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            <?php get_template_part('template-parts/page/page', 'top-banner');?>
             <?php endif; ?>

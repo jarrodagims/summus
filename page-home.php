@@ -44,7 +44,7 @@ Template Name: Home
             <div class="secondary-nav-title">
                 <div class="ribbon">Free Consultations<br class="d-lg-none"> On Personal Injury & Family Cases</div>
             </div>
-            <div class="secondary-nav">
+            <div class="secondary-nav d-none d-lg-block">
                 <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
             </div>
 
@@ -323,10 +323,12 @@ Template Name: Home
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <picture>
-                                    <source srcset="<?=IMGURL?>justice.jpg" media="(min-width: 992px)">
-                                    <img src="<?=IMGURL?>lawyer-sm.jpg" />
-                                </picture>
+                                <div class="extra-padding">
+                                    <picture>
+                                        <source srcset="<?=IMGURL?>justice.jpg" media="(min-width: 992px)">
+                                        <img src="<?=IMGURL?>lawyer-sm.jpg" />
+                                    </picture>
+                                </div>
                             </div>
                             <div class="col">
                                 <div class="extra-padding">
@@ -383,7 +385,7 @@ Template Name: Home
                         <div class="col">
                             <img src="<?=IMGURL?>attorneys.svg" width="144" alt="">
 
-                            <h2>Attorneys Who Listen and<br class="d-none d-lg-block">
+                            <h2>Attorneys Who Listen and<br>
                                 Fight For You </h2>
 
                         </div>
@@ -462,8 +464,8 @@ Template Name: Home
                         <div class="bottom">
                             <div class="extra-padding">
                                 <p>
-                                    Our office is located in downtown<br />
-                                    El Paso at 1505 E. Missouri Avenue.</p>
+                                    Our office is located in downtown<br class="d-lg-block d-none" />
+                                    El Paso at <strong>1505 E. Missouri Avenue.</strong></p>
 
                                 <a href="">
                                     <button class="btn btn-outline">
@@ -484,7 +486,10 @@ Template Name: Home
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img src="<?=IMGURL?>gavel.jpg" alt="">
+                                <picture>
+                                    <source srcset="<?=IMGURL?>gavel.jpg" media="(min-width: 992px)">
+                                    <img src="<?=IMGURL?>how-can-we-help.jpg" />
+                                </picture>
                             </div>
                             <div class="col">
                                 <h2>
@@ -524,15 +529,6 @@ Template Name: Home
             </div>
         </section>
 
-        <section id="home-module-8" class="home-module-8">
-            <div class="secondary-nav">
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13568.019099696785!2d-106.4767735!3d31.7703557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc130c1d7046c2add!2sThe+Law+Offices+of+Rios+%26+Parada%2C+PLLC!5e0!3m2!1sen!2sus!4v1559235322722!5m2!1sen!2sus"
-                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
-            </div>
-        </section>
 
 
 

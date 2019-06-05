@@ -7,6 +7,15 @@
  */
 ?>
 
+<section id="home-module-8" class="home-module-8">
+    <div class="secondary-nav">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13568.019099696785!2d-106.4767735!3d31.7703557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc130c1d7046c2add!2sThe+Law+Offices+of+Rios+%26+Parada%2C+PLLC!5e0!3m2!1sen!2sus!4v1559235322722!5m2!1sen!2sus"
+            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
+    </div>
+</section>
 
 <footer id="footer">
     <div class="container">
@@ -24,7 +33,6 @@
                     <div class="columns">
                         <div>
 
-
                             <p>1505 E Missouri Ave<br />
                                 El Paso, TX 79902
                             </p>
@@ -33,7 +41,7 @@
                                 F: <a href="915532-3279">(915) 532-3279</a>
                             </p>
 
-                            <ul class="list-inline social-media sm">
+                            <ul class="d-none d-lg-flex list-inline social-media sm">
                                 <li><a href="https://www.facebook.com/pages/The-Law-Offices-of-Rios-Parada-PLLC/702710576472573"
                                         class="facebook-button social-media-button sm square lighten external"
                                         target="_blank"><i
@@ -42,11 +50,6 @@
                                 <li><a href="https://twitter.com/riosparadalaw"
                                         class="twitter-button social-media-button sm square lighten external"
                                         target="_blank"><i class="fab fa-twitter fa-fw "><span>Twitter</span></i></a>
-                                </li>
-                                <li><a href="https://www.instagram.com/universalgraphicsinc/"
-                                        class="instagram-button social-media-button sm square lighten external"
-                                        target="_blank"><i
-                                            class="fab fa-instagram fa-fw "><span>Instagram</span></i></a>
                                 </li>
                             </ul>
                         </div>

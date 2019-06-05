@@ -33,6 +33,7 @@
   @include media-breakpoint-down(lg) {
       padding-top: 15px;
       text-align: center;
+      padding-top: 2em;
       padding-bottom: 1em;
 
       .col:last-child .extra-padding {
@@ -40,15 +41,20 @@
         padding-right: 15px;
       }
 
+      p {
+        font-size: 13px;
+      }
+
       h2 {
         position: relative;
         text-align: center;
         font-size: 14px;
-        margin-top: 1em;
+        margin-top: 2em;
       }
 
       p.blurb {
-        margin-top: 2em;
+        margin-top: 3em;
+        font-size: 14px;
       }
 
       h2::after {

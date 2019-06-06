@@ -182,7 +182,7 @@
       color: #BFC2C1;
 
       &:hover {
-        color: $white;
+        color: $sherpa-brand-primary;
       }
     }
   }
@@ -389,6 +389,8 @@
     ul.social-media {
       margin-top: 0;
       margin-bottom: 0;
+      display: flex;
+      justify-content: center;
     }
   }
 

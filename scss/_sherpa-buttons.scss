@@ -40,8 +40,8 @@ input[type=submit] {
   &:hover:focus,
   &:hover:active,
   &:hover:visited {
-    color: $sherpa-brand-primary;
-    background: $white;
+    color: $white;
+    background: $sherpa-secondary-color;
   }
 
   &.btn-transparent {

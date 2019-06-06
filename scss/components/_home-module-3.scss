@@ -77,6 +77,12 @@
      > div:nth-child(odd) {
          background: #E4E7E9;
      }
+
+     @include media-breakpoint-down(lg) {
+         .align-bottom {
+             display: none;
+         }
+     }
  }
 
  .column-top {
@@ -95,6 +101,7 @@
 
  .extra-padding {
      padding: 40px 60px;
+     height: 38%;
 
      p {
          font-size: 13px;

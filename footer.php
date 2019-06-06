@@ -37,8 +37,8 @@
                                 El Paso, TX 79902
                             </p>
 
-                            <p>T: <a href="915532-2333">(915) 532-2333</a><br />
-                                F: <a href="915532-3279">(915) 532-3279</a>
+                            <p>T: <a href="tel:9155322333">(915) 532-2333</a><br />
+                                F: <a href="tel:9155323279">(915) 532-3279</a>
                             </p>
                             <p>
                                 <ul class="d-none d-sm-none d-md-flex list-inline social-media sm">

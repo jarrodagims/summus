@@ -152,7 +152,24 @@ Template Name: Home
                                 </p>
                             </div>
 
+                            <div class="align-bottom">
+                                <div class="bottom">
+                                    <p>Some of the most common include:</p>
+                                </div>
 
+                                <div class="bottom-end extra-padding">
+                                    <ul>
+                                        <li>Car accidents</li>
+                                        <li>Motorcycle accidents</li>
+                                        <li>Dog bites</li>
+                                        <li>Slip & fall accidents</li>
+                                        <li>Wrongful death</li>
+                                        <li>Trucking accidents</li>
+                                        <li>Pedestrian accidents</li>
+                                    </ul>
+
+                                </div>
+                            </div>
                         </div>
                         <div class="immigration-lawyer">
 
@@ -194,6 +211,24 @@ Template Name: Home
                                     change your legal status.
                                 </p>
                             </div>
+                            <div class="align-bottom">
+                                <div class="bottom">
+                                    <p>Below are some of the services we offer:</p>
+                                </div>
+
+                                <div class="bottom-end  extra-padding">
+                                    <ul>
+                                        <li>Deportation defense</li>
+                                        <li>Motions for bonds & bond processing</li>
+                                        <li>DACA renewals</li>
+                                        <li>Citizenship applications</li>
+                                    </ul>
+
+                                    <p>
+                                        Adjustment of status <a href="<?=SITEURL?>">(green cards or visas)</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div class="family-lawyer">
 
@@ -230,10 +265,27 @@ Template Name: Home
                                 </p>
                             </div>
 
+                            <div class="align-bottom">
+                                <div class="bottom">
+                                    <p>Some of the family law cases we work include:</p>
+                                </div>
+
+                                <div class="bottom-end  extra-padding">
+                                    <ul>
+                                        <li>Divorce</li>
+                                        <li>Child custody</li>
+                                        <li>Child support</li>
+                                        <li>Modifications</li>
+                                        <li>Enforcement</li>
+                                        <li>Protective orders</li>
+                                    </ul>
+                                </div>
+                            </div>
+
 
                         </div>
                     </div>
-                    <div class="three-columns">
+                    <!-- <div class="three-columns">
 
                         <div>
                             <div class="bottom">
@@ -291,7 +343,7 @@ Template Name: Home
                             </div>
 
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -466,7 +518,7 @@ Template Name: Home
                                     Our office is located in downtown<br class="d-lg-block d-none" />
                                     El Paso at <strong>1505 E. Missouri Avenue.</strong></p>
 
-                                <a href="">
+                                <a href="<?=SITEURL?>/contact-us/">
                                     <button class="btn btn-outline">
                                         GET DIRECTIONS
                                     </button>

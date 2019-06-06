@@ -72,11 +72,12 @@
 }
 
 body #main .container article #sidebar {
-  width: 468px;
+  width: 498px;
   padding: 0 0;
   margin-left: 105px;
   margin-bottom: 1em;
   z-index: 9999;
+  max-width: 100%;
 
  &.submit-files {
     margin: 0 auto;

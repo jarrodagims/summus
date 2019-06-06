@@ -112,8 +112,8 @@ Template Name: Home
                 <div>
                     <div class="row">
                         <div class="col">
-                            <div class="h2">Overview of Our Services: Experienced<br class="d-block d-lg-none">
-                                Attorneys That Fight For You</div>
+                            <div class="h2">Experienced Attorneys Who Fight For You<br class="d-block d-lg-none">
+                                | Overview of Our Services</div>
                         </div>
                     </div>
                     <div class="three-columns">
@@ -130,25 +130,15 @@ Template Name: Home
 
                             <div class="extra-padding">
                                 <p><strong><em>Personal injury is a broad category of legal cases that pertain to injury
-                                            to the
-                                            body
-                                            resulting
-                                            from
-                                            negligence, car crashes, or other types of accidents.</em></strong></p>
+                                            to the body resulting from negligence, car crashes, or other types of
+                                            accidents.</em></strong></p>
 
-                                <p>These type of cases are for clients who suffered an injury to their person as a
-                                    result of
-                                    someone
-                                    else’s negligent behavior, business practices, or unsafe facility. Personal injury
-                                    can have
-                                    a
-                                    significant impact on people’s lives, cost thousands in medical expenses, and alter
-                                    a
-                                    person’s
-                                    ability to work. These are difficult cases that affect people’s quality of life,
-                                    financial
-                                    standing,
-                                    and beyond.
+                                <p>These type of cases involve victims who suffered an injury as a result of someone
+                                    else’s negligent behavior, business practices, or unsafe facility. A personal injury
+                                    can have a significant impact on people’s lives, cost thousands in medical expenses,
+                                    and alter a person’s ability to work. These are difficult cases that affect people’s
+                                    quality of life, financial standing, and beyond. Some of the most common personal
+                                    injury cases we see include:
                                 </p>
                             </div>
 
@@ -167,7 +157,6 @@ Template Name: Home
                                         <li>Trucking accidents</li>
                                         <li>Pedestrian accidents</li>
                                     </ul>
-
                                 </div>
                             </div>
                         </div>
@@ -190,25 +179,17 @@ Template Name: Home
                                 </p>
 
                                 <p>
+                                    The United States of America is the land of opportunity, innovation, and greatness.
                                     It is a land that welcomes people of all backgrounds and religions, and it is why
-                                    thousands
-                                    of
-                                    people are fighting to call the U.S.A. their home.
+                                    thousands of people are fighting to call the U.S. their home.
                                 </p>
 
                                 <p>
                                     Immigration law is important to us, especially as a homegrown city of immigrants.
-                                    The
-                                    immigration
-                                    system is overwhelming and downright impossible to tackle on your own. That’s why we
-                                    take
-                                    our
-                                    job
-                                    seriously. We work to help you resolve your case, whether you have been detained or
-                                    are
-                                    looking
-                                    to
-                                    change your legal status.
+                                    The immigration system is overwhelming and downright impossible to tackle on your
+                                    own. That’s why we take our role in your life seriously. We work to help you resolve
+                                    your case, whether you have been detained or are looking to change your legal
+                                    status. Here are some of the immigration cases we handle:
                                 </p>
                             </div>
                             <div class="align-bottom">
@@ -220,6 +201,7 @@ Template Name: Home
                                     <ul>
                                         <li>Deportation defense</li>
                                         <li>Motions for bonds & bond processing</li>
+                                        <li>Adjustment of status (green cards or visas)</li>
                                         <li>DACA renewals</li>
                                         <li>Citizenship applications</li>
                                     </ul>
@@ -245,23 +227,15 @@ Template Name: Home
                             <div class="extra-padding">
                                 <p>
                                     <strong><em>Family life is everything. But we know that the dynamic of a family is
-                                            often
-                                            complicated,
-                                            resulting
-                                            in difficult moments.</em></strong>
+                                            often complicated, resulting in difficult moments.</em></strong>
                                 </p>
 
                                 <p>
                                     When matters become serious, legal assistance is necessary. Our law firm is here to
-                                    help you
-                                    settle
-                                    disputes that are otherwise painful, complicated, and wrought with legal
-                                    implications. We
-                                    are
-                                    committed to ensuring our clients have adequate and expert legal counsel when it
-                                    comes to
-                                    dealing
-                                    with family issues.
+                                    help you settle disputes that are otherwise painful, complicated, and wrought with
+                                    legal implications. We are committed to ensuring our clients have adequate and
+                                    expert legal counsel when it comes to dealing with family issues. Some of the family
+                                    law cases we work include:
                                 </p>
                             </div>
 
@@ -270,7 +244,7 @@ Template Name: Home
                                     <p>Some of the family law cases we work include:</p>
                                 </div>
 
-                                <div class="bottom-end  extra-padding">
+                                <div class="bottom-end extra-padding">
                                     <ul>
                                         <li>Divorce</li>
                                         <li>Child custody</li>
@@ -281,72 +255,11 @@ Template Name: Home
                                     </ul>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
-                    <!-- <div class="three-columns">
 
-                        <div>
-                            <div class="bottom">
-                                <p>Some of the most common include:</p>
-                            </div>
-
-                            <div class="bottom-end extra-padding">
-                                <ul>
-                                    <li>Car accidents</li>
-                                    <li>Motorcycle accidents</li>
-                                    <li>Dog bites</li>
-                                    <li>Slip & fall accidents</li>
-                                    <li>Wrongful death</li>
-                                    <li>Trucking accidents</li>
-                                    <li>Pedestrian accidents</li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="bottom">
-                                <p>Below are some of the services we offer:</p>
-                            </div>
-
-                            <div class="bottom-end  extra-padding">
-                                <ul>
-                                    <li>Deportation defense</li>
-                                    <li>Motions for bonds & bond processing</li>
-                                    <li>DACA renewals</li>
-                                    <li>Citizenship applications</li>
-                                </ul>
-
-                                <p>
-                                    Adjustment of status <a href="<?=SITEURL?>">(green cards or visas)</a>
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="bottom">
-                                <p>Some of the family law cases we work include:</p>
-                            </div>
-
-                            <div class="bottom-end  extra-padding">
-                                <ul>
-                                    <li>Divorce</li>
-                                    <li>Child custody</li>
-                                    <li>Child support</li>
-                                    <li>Modifications</li>
-                                    <li>Enforcement</li>
-                                    <li>Protective orders</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> -->
                 </div>
             </div>
-
             <div class="contact-ribbon">
                 <div class="container-fluid">
                     <div class="row">
@@ -357,7 +270,6 @@ Template Name: Home
                 </div>
             </div>
         </section>
-
         <section class="ribbon">
             <div class="container">
                 <div class="row">
@@ -389,35 +301,25 @@ Template Name: Home
                                                 A Law Firm That Fights For Justice</em></strong></p>
 
                                     <p>
-                                        The Rios & Parada law firm is made up of local attorneys who are closely
-                                        familiar
-                                        with the
-                                        city
-                                        and the great state of Texas. Our three attorneys attended law school at the
-                                        prestigious
-                                        Thurgood Marshall School of Law in Houston, Texas.
+                                        The Rios & Parada Law Firm is made up of local attorneys who are closely
+                                        familiar with the city and the great state of Texas. Our three attorneys
+                                        attended law school at the prestigious Thurgood Marshall School of Law in
+                                        Houston, Texas.
                                     </p>
 
                                     <p>
-                                        Gabriel Seañez and Ricardo Rios are both from El Paso and grew up in the city.
-                                        Tony
-                                        Parada
-                                        was
-                                        raised in Huntsville, Texas but focused intensely on immigration law. Mr.
-                                        Parada’s
-                                        expertise
-                                        in
-                                        this area of law led him to El Paso, Texas where he became the immigration
-                                        specialist of the
-                                        firm.
+                                        Gabriel Seañez and Ricardo Rios are both from El Paso and grew up in the Sun
+                                        City. Tony Parada was raised in Huntsville, Texas and focused intensely on
+                                        immigration law. Mr. Parada’s expertise in this area of law led him to El Paso
+                                        where he became the immigration specialist of the firm.
                                     </p>
 
                                     <p>
                                         Together, our team of attorneys forms the region’s most experienced and
-                                        knowledgeable team
-                                        of
-                                        legal help in personal injury, immigration, and family law.
+                                        knowledgeable team of legal help in personal injury, immigration, and family
+                                        law.
                                     </p>
+
                                 </div>
 
                             </div>
@@ -447,39 +349,27 @@ Template Name: Home
                 <div class="row">
                     <div class="col">
                         <div class="extra-padding">
+
                             <p class="blurb">
                                 <strong>
                                     <em>Our commitment is to the law and to the individual. Every case is different and
-                                        every
-                                        case
-                                        is
-                                        worth fighting.</em>
-
+                                        every case is worth fighting.</em>
                                 </strong>
                             </p>
 
                             <p>
                                 There is a lot at stake, whether it is your personal health, your freedom, or your
-                                family’s
-                                future.
-                                These matters affect your life. For these reasons, we uphold the highest standards of
-                                excellence
-                                when it
-                                comes to serving our clients and representing their individual case. We offer free
-                                consultations for
-                                family law and personal injury cases.
+                                family’s future. These matters affect your life. For these reasons, we uphold the
+                                Free Consultations for Family Law and Personal Injury Cases.resenting
+                                their individual case.
                             </p>
 
-                            <p>
-                                We fight honestly. Every case begins by telling you the truth about your situation. We
-                                then
-                                explain
-                                the
-                                next steps and how we will represent you. As our client, we keep open communication to
-                                ensure you
-                                are
-                                always aware of the standing and status of your pending case or developments.
-                            </p>
+                            <p><strong>Free Consultations for Family Law and Personal Injury Cases.</strong> </p>
+
+                            <p>Every case begins by telling you the truth about your situation. We then explain the next
+                                steps and how we will represent you. As our client, we keep open communication to ensure
+                                you are always aware of the standing and status of your pending case or developments.
+                                Simply put, we fight honestly!</p>
                         </div>
                     </div>
                 </div>
@@ -571,6 +461,7 @@ Template Name: Home
                                     and
                                     integrity.
                                 </p>
+
 
                             </div>
 

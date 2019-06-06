@@ -7,8 +7,7 @@
                 <ul class="nav navbar-nav">
                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
                         class="menu-item current-menu-item active nav-item">
-                        <a href="#home-module-1" class="sidebar-link nav-link">Personal
-                            Injury Attorney</a>
+                        <a href="#home-module-1" class="sidebar-link nav-link">Back to Top</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +42,7 @@
                 <ul class="nav navbar-nav">
                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
                         class="menu-item current-menu-item active nav-item">
-                        <a href="#home-module-6" class="sidebar-link nav-link">Who We Are</a></li>
+                        <a href="#home-module-6" class="sidebar-link nav-link">Who We Serve</a></li>
                 </ul>
             </div>
         </li>

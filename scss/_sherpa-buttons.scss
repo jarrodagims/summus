@@ -12,6 +12,13 @@ input[type=submit] {
   &:focus, &:active {
     background: $sherpa-brand-primary;
   }
+
+  &.btn.btn-outline {
+    &:hover {
+      background: $white;
+      color: $sherpa-brand-primary;
+    }
+  }
 }
 
 .btn,

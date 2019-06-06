@@ -61,7 +61,6 @@
     input[type="email"],
     input[type="tel"],
     textarea {
-      background: rgba(255, 255, 255, 0.2);
       border: 0;
       color: $white;
       padding: 1em;
@@ -140,7 +139,6 @@
       input[type="email"],
       input[type="tel"],
       textarea {
-        background: rgba(0, 0, 0, 0.15);
         border: 0;
         color: #000;
         padding: 1em;
@@ -313,6 +311,21 @@
             outline: 0;
           }
         }
+
+        &:first-child input {
+          background: rgba(255,255,255,0.3);
+        }
+
+        &:nth-child(2) input {
+          background: rgba(255,255,255,0.13)
+        }
+
+        &:nth-child(3) input {
+          background: rgba(255,255,255,0.08)
+        }
+
+        
+
       }
 
       .col-md-6 {
@@ -329,8 +342,8 @@
         @include svg-arrow(_trim($white));
         background-repeat: no-repeat;
         position: absolute;
-        right: 0.5em;
-        top: 15px;
+        right: 0.5em; 
+        top: 50%;
         transform: translateY(-50%);
         font-weight: 300;
         vertical-align: middle;
@@ -346,7 +359,7 @@
     input[type="email"],
     input[type="tel"],
     textarea {
-      background: rgba(255, 255, 255, 0.08);
+      
       border: 0;
       color: $white;
       padding: 1em;
@@ -354,6 +367,10 @@
       transition: all 0.3ms ease-in;
       padding-right:30px;
       font-size: 12px;
+      background: transparent;
+
+
+        
 
       &.wpcf7-not-valid {
         border: 1px solid red;
@@ -388,6 +405,9 @@
     padding: 2em;
     display: none !important;
   }
+
+    
+  
 }
 
 #contact-form {

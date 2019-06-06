@@ -93,9 +93,6 @@
     width: 50vw;
   }
 
-  .btn {
-    color: $white;
-  }
 
   .map {
     max-width: 473px;
@@ -423,6 +420,12 @@
 
   }
 
+  @include media-breakpoint-up(xl) {
+    .col:last-child .extra-padding {
+      max-width: 80%;
+    }
+  }
+
   @include media-breakpoint-down(lg) {
     .columns {
       display: flex;
@@ -436,6 +439,8 @@
     .col .extra-padding {
       padding-top: 2em;
     }
+
+    
   }
 
   

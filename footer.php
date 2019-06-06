@@ -72,12 +72,9 @@
                     <span class="h2">Schedule A Consultation</span>
 
                     <div id="contact-form">
-                        <?php if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
-    echo do_shortcode('[contact-form-7 id="62" title="Contact Form"]');
-} else {
-    echo do_shortcode('[contact-form-7 id="62" title="Contact Form"]');
-}
-?>
+                        <?php
+                        echo do_shortcode('[contact-form-7 id="62" title="Contact Form"]');
+                        ?>
                     </div>
                 </div>
             </div>

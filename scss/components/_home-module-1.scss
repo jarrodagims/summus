@@ -23,11 +23,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .h2 {
       @include raleway();
       font-style: normal;
+      text-align: center;
     }
      
 

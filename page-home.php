@@ -19,6 +19,16 @@ Template Name: Home
         <?php echo get_template_part('template-parts/top-header'); ?>
 
         <div class="jumbotron">
+
+            <div class="v-align">
+                <ul class="nav navbar-nav">
+                    <li>ESPAÑOL</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="tel:<?php printPhone();?>">TEL: <?php printPhone();?></a></li>
+                </ul>
+            </div>
+
             <div class="jumbo-content">
                 <div>
 

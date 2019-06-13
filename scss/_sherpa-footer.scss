@@ -24,6 +24,14 @@
 
   .columns {
     column-count: 2;
+
+//     > div {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: flex-start;
+//       flex: 1;
+//       height: 100%;
+//     }
   }
 
   #contact-form form div.wpcf7-validation-errors, #contact-form form div.wpcf7-acceptance-missing {
@@ -79,20 +87,10 @@
     @include serif();
   }
 
-  .extra-padding {
-    padding: 2em 0;
-  }
-
-  .col .extra-padding {
-    padding: 76px 0;
-  }
-
-
   iframe {
     right: 0;
     width: 50vw;
   }
-
 
   .map {
     max-width: 473px;
@@ -104,6 +102,11 @@
     letter-spacing: 0;
     text-transform: none;
   } 
+
+  .row > .col .extra-padding {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
 
 //   .container {
 //     max-width: 1480px;
@@ -127,7 +130,6 @@
   #contact-form {
     justify-content: flex-start;
     padding-left: 0;
-    margin-bottom: 3em;
 
     p {
       color: #808080;
@@ -171,7 +173,6 @@
   ul.social-media {
     display: flex;
     justify-content: flex-start;
-    margin-top: 3em;
 
 
     li a {
@@ -391,7 +392,21 @@
     }
   }
 
- 
+  .flex-col {
+    display: flex;
+    justify-content: space-between;
+   
+
+    > div {
+      width: 50%;
+      display: flex;
+      align-items: flex-end;
+
+      ul {
+        margin: 0 0;
+      }
+    }
+  }
 
 
   @include media-breakpoint-down(md) {
@@ -427,6 +442,11 @@
   }
 
   @include media-breakpoint-down(lg) {
+
+    .row .col .extra-padding {
+      padding: 2em 15px;
+    }
+    
     .columns {
       display: flex;
       flex-direction: column;
@@ -438,6 +458,28 @@
 
     .col .extra-padding {
       padding-top: 2em;
+    }
+
+    .flex-col {
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      > div {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        ul {
+          margin-top: 2em;
+          margin-bottom: 2em;
+        }
+      }
     }
 
     

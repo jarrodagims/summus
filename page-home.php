@@ -4,8 +4,8 @@
 Template Name: Home
  */?>
 
-<section id="home-module-1" class="home-module-1 waypoint">
-    <div class="nav-sidebar">
+<section id="home-module-1" class="home-module-1 waypoint" data-target="#button1">
+    <div class=" nav-sidebar">
         <div class="brand-header d-lg-none">
             <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
             'description'
@@ -19,16 +19,6 @@ Template Name: Home
         <?php echo get_template_part('template-parts/top-header'); ?>
 
         <div class="jumbotron">
-
-            <div class="v-align">
-                <ul class="nav navbar-nav">
-                    <li>ESPAÑOL</li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="tel:<?php printPhone();?>">TEL: <?php printPhone();?></a></li>
-                </ul>
-            </div>
-
             <div class="jumbo-content">
                 <div>
 
@@ -75,14 +65,16 @@ Template Name: Home
     <div class="content">
 
 
-        <section id="home-module-2" class="home-module-2 ">
+        <section id="home-module-2" class="home-module-2 " data-target="#button2">
             <div class="container">
                 <div class="row">
 
                     <div class="col">
                         <div>
                             <h2 class="h4 expander collapsed" data-toggle="collapse" data-target="#collapse"
-                                aria-expanded="false" aria-controls="collapse"><span>Bulleted List</span></h2>
+                                aria-expanded="false" aria-controls="collapse"><span>El Paso’s best immigration
+                                    litigation law firm
+                                </span></h2>
                             <div class="extra-padding">
                                 <?php if( $section_1_expander = get_field('section_1_expander') ) : ?>
                                 <?php echo $section_1_expander ?>
@@ -108,7 +100,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section id="home-module-3" class="home-module-3">
+        <section id="home-module-3" class="home-module-3 waypoint" data-target="#button2">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -147,8 +139,7 @@ Template Name: Home
                                     else’s negligent behavior, business practices, or unsafe facility. A personal injury
                                     can have a significant impact on people’s lives, cost thousands in medical expenses,
                                     and alter a person’s ability to work. These are difficult cases that affect people’s
-                                    quality of life, financial standing, and beyond. Some of the most common personal
-                                    injury cases we see include:
+                                    quality of life, financial standing, and beyond.
                                 </p>
                             </div>
 
@@ -189,7 +180,6 @@ Template Name: Home
                                 </p>
 
                                 <p>
-                                    The United States of America is the land of opportunity, innovation, and greatness.
                                     It is a land that welcomes people of all backgrounds and religions, and it is why
                                     thousands of people are fighting to call the U.S. their home.
                                 </p>
@@ -199,7 +189,7 @@ Template Name: Home
                                     The immigration system is overwhelming and downright impossible to tackle on your
                                     own. That’s why we take our role in your life seriously. We work to help you resolve
                                     your case, whether you have been detained or are looking to change your legal
-                                    status. Here are some of the immigration cases we handle:
+                                    status.
                                 </p>
                             </div>
                             <div class="align-bottom">
@@ -216,9 +206,6 @@ Template Name: Home
                                         <li>Citizenship applications</li>
                                     </ul>
 
-                                    <p>
-                                        Adjustment of status <a href="<?=SITEURL?>">(green cards or visas)</a>
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -244,8 +231,7 @@ Template Name: Home
                                     When matters become serious, legal assistance is necessary. Our law firm is here to
                                     help you settle disputes that are otherwise painful, complicated, and wrought with
                                     legal implications. We are committed to ensuring our clients have adequate and
-                                    expert legal counsel when it comes to dealing with family issues. Some of the family
-                                    law cases we work include:
+                                    expert legal counsel when it comes to dealing with family issues.
                                 </p>
                             </div>
 
@@ -290,7 +276,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section id="home-module-4" class="home-module-4">
+        <section id="home-module-4" class="home-module-4 waypoint" data-target="#button3">
             <div class="container">
                 <div class="row">
                     <div class="container">
@@ -306,9 +292,6 @@ Template Name: Home
                             <div class="col">
                                 <div class="extra-padding">
                                     <h2>A Law Firm That Fights For Justice</h2>
-
-                                    <p class="blurb"><strong><em>The Law Offices of Rios & Parada, PLLC:<br />
-                                                A Law Firm That Fights For Justice</em></strong></p>
 
                                     <p>
                                         The Rios & Parada Law Firm is made up of local attorneys who are closely
@@ -367,19 +350,24 @@ Template Name: Home
                                 </strong>
                             </p>
 
-                            <p>
-                                There is a lot at stake, whether it is your personal health, your freedom, or your
-                                family’s future. These matters affect your life. For these reasons, we uphold the
-                                Free Consultations for Family Law and Personal Injury Cases.resenting
-                                their individual case.
-                            </p>
-
-                            <p><strong>Free Consultations for Family Law and Personal Injury Cases.</strong> </p>
-
-                            <p>Every case begins by telling you the truth about your situation. We then explain the next
-                                steps and how we will represent you. As our client, we keep open communication to ensure
-                                you are always aware of the standing and status of your pending case or developments.
-                                Simply put, we fight honestly!</p>
+                            <div class="text-center">
+                                <p>
+                                    There is a lot at stake, whether it is your personal health, your freedom, or your
+                                    family’s future. These matters affect your life. For these<br
+                                        class="d-none d-xl-block"> reasons, we uphold the
+                                    Free Consultations for Family Law and Personal Injury Cases.resenting
+                                    their individual case.
+                                </p>
+                                <p>Every case begins by telling you the truth about your situation. We then explain the
+                                    next
+                                    steps and how we will<br class="d-none d-xl-block"> represent you. As our client, we
+                                    keep open communication to
+                                    ensure
+                                    you are always aware of the standing and status of your pending<br
+                                        class="d-none d-xl-block"> case or
+                                    developments.
+                                    Simply put, we fight honestly!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -391,7 +379,7 @@ Template Name: Home
         </div>
 
 
-        <section id="home-module-6" class="home-module-6">
+        <section id="home-module-6" class="home-module-6 waypoint" data-target="#button4">
 
             <div class="container">
                 <div class="row">
@@ -416,7 +404,7 @@ Template Name: Home
                             <div class="extra-padding">
                                 <p>
                                     Our office is located in downtown<br class="d-lg-block d-none" />
-                                    El Paso at <strong>1505 E. Missouri Avenue.</strong></p>
+                                    El Paso at <strong><em>1505 E. Missouri Avenue.</em></strong></p>
 
                                 <a href="<?=SITEURL?>/contact-us/">
                                     <button class="btn btn-outline">
@@ -431,7 +419,7 @@ Template Name: Home
 
         </section>
 
-        <section id="home-module-7" class="home-module-7">
+        <section id="home-module-7" class="home-module-7 waypoint" data-target="#button5">
             <div class="container">
                 <div class="row">
                     <div class="container">

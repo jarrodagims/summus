@@ -943,11 +943,15 @@ $navWidth: 60px;
 
     > a::before {
       content: "";
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.4);
       border-radius: 50%;
       width: 10px;
       height: 10px;
       display: block;
+    }
+
+    > a.active::before {
+      background: $white;
     }
 
     > a {
@@ -1057,7 +1061,9 @@ $navWidth: 60px;
 
   .nav-sidebar {
     width: $navWidth;
-    background: transparent;
+//     background: transparent;
+   
+    
   }
 
   @include media-breakpoint-down(lg) {
@@ -2034,8 +2040,24 @@ ul.floorplan-nav {
     transition: background 3s ease-in-out;
 
     &.stuck {
+//       position: relative;
+
+      &::before {
+        background: rgba(0, 0, 0, 0.3);
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+
       transition: background 3s ease-in-out;
-      background: rgba(0, 0, 0, 0.3);
+      
+      background: url("../img/bg-sidebar.jpg") 0 0 no-repeat;
+      background-size: cover;
     }
   }
 

@@ -65,7 +65,30 @@
 .v-align {
     display: flex;
     justify-content: space-between;
-    padding: 0 0;
+}
+
+.home-module-1 .v-align {
+    @include media-breakpoint-up(lg) {
+         padding: 1em 2em;
+
+         .list-inline {
+             font-size: .75em;
+         }
+
+         .list-inline li {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+
+        .list-inline li a {
+            color: rgba(255,255,255,1);
+        }
+
+        .navbar-nav li a {
+            color: rgba(255,255,255,1);
+        }
+    }
 }
 
 body.internal {

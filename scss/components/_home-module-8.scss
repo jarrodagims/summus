@@ -38,8 +38,17 @@
 
    @include media-breakpoint-down(lg) { 
 
+       iframe {
+         position: relative;
+         left: 0;
+         width: 100%;
+       }
+
        .secondary-nav {
          height: 130px;
+         justify-content: flex-start;
+         display: flex;
+         position: relative;
        }
        
       .secondary-nav .navbar-sherpa {

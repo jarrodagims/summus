@@ -13,7 +13,7 @@
 
   text-align: center;
 
-  .col {
+  .row > .col {
     padding: 2.5em 0;
   }
   
@@ -21,9 +21,11 @@
     margin-bottom: 0;
   }
 
-  .container:last-child .col {
+  .container:last-child > .col {
     padding: 3em 0;
   }
+
+  
 
   .extra-padding {
     padding: 1em 0;
@@ -32,6 +34,26 @@
   p.blurb {
     font-size: 20px;
     margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+   
+  }
+
+  em {
+    color: #231F20;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  @include media-breakpoint-up(lg) {
+
+    .text-center {
+      margin: 0 auto;
+    }
+    
   }
  
 

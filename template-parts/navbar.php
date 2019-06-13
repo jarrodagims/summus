@@ -47,13 +47,13 @@
             </div>
         </li>
         <li>
-            <a id="button5" class="sidebar-link contact-link" href="#footer" data-target="#footer">
+            <a id="button5" class="sidebar-link contact-link" href="#home-module-8" data-target="#home-module-8">
             </a>
             <div class="navbar-collapse collapse show tab">
                 <ul class="nav navbar-nav">
                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
                         class="menu-item current-menu-item nav-item">
-                        <a href="#footer" data-target="#footer" class="sidebar-link nav-link">Contact
+                        <a href="#home-module-8" data-target="#home-module-8" class="sidebar-link nav-link">Contact
                             Us</a></li>
                 </ul>
             </div>

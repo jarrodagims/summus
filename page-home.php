@@ -4,10 +4,11 @@
 Template Name: Home
  */?>
 
-<section id="home-module-1" class="home-module-1 waypoint" data-target="#button1">
+<section class="home-module-1 ">
     <div class=" nav-sidebar">
         <div class="brand-header d-lg-none">
-            <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
+            <a data-target="#button1" class="waypoint navbar-brand" href='<?php echo get_site_url(); ?>'><img
+                    src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
             'description'
         ); ?>" /></a>
         </div>
@@ -24,8 +25,8 @@ Template Name: Home
 
                     <div>
 
-                        <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg"
-                                alt="<?php echo get_bloginfo(
+                        <a data-target="#button1" id="home-module-1" class="waypoint navbar-brand"
+                            href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
     'description'
 ); ?>" /></a>
 
@@ -65,7 +66,7 @@ Template Name: Home
     <div class="content">
 
 
-        <section id="home-module-2" class="home-module-2 " data-target="#button2">
+        <section id="home-module-2" class="home-module-2 ">
             <div class="container">
                 <div class="row">
 
@@ -100,7 +101,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section id="home-module-3" class="home-module-3 waypoint" data-target="#button2">
+        <section id="home-module-3" class="home-module-3">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -110,7 +111,7 @@ Template Name: Home
                 </div>
             </div>
 
-            <div class="container three-col">
+            <div class="container three-col  waypoint" data-target="#button2">
                 <div>
                     <div class="row">
                         <div class="col">
@@ -270,7 +271,6 @@ Template Name: Home
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>The Law Offices of Rios & Parada, PLLC:</h2>
                     </div>
                 </div>
             </div>

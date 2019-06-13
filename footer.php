@@ -7,7 +7,7 @@
  */
 ?>
 
-<section id="home-module-8" class="home-module-8">
+<section id="home-module-8" class="waypoint home-module-8" data-target="#button5">
     <div class="secondary-nav">
 
         <iframe
@@ -16,7 +16,7 @@
     </div>
 </section>
 
-<footer id="footer" data-target="#button6">
+<footer id="footer">
     <div class="container">
 
         <div class="row">

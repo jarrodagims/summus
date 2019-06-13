@@ -5,31 +5,32 @@
     $(".waypoint").each(function() {
       var self = $(this);
 
+      var inview = new Waypoint.Inview({
+        element: self,
+        enter: function(direction) {
+          $(self.attr("data-target")).addClass("active");
+          //alert("Enter triggered with direction " + direction);
+        },
+        entered: function(direction) {
+          //alert("Entered triggered with direction " + direction);
+        },
+        exit: function(direction) {},
+        exited: function(direction) {
+          $(self.attr("data-target")).removeClass("active");
+          //alert("Exited triggered with direction " + direction);
+        }
+      });
+      // var self = $(this);
+
       $(this).waypoint({
         handler: function() {
-          self.addClass("active");
-          $(self.attr("data-target")).addClass("active");
+          // self.addClass("active");
+          // $(self.attr("data-target")).addClass("active");
           //disable after activating once
           //this.destroy();
         },
-        offset: "50%"
+        offset: 0
       });
-    });
-
-    var inview = new Waypoint.Inview({
-      element: $("#home-module-1")[0],
-      enter: function(direction) {
-        //alert("Enter triggered with direction " + direction);
-      },
-      entered: function(direction) {
-        //alert("Entered triggered with direction " + direction);
-      },
-      exit: function(direction) {
-        $($("#home-module-1").attr("data-target")).removeClass("active");
-      },
-      exited: function(direction) {
-        //alert("Exited triggered with direction " + direction);
-      }
     });
 
     $(".sidebar-link").click(function(e) {

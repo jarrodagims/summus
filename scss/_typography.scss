@@ -11,7 +11,7 @@ h2,
 h3,
 h4 {
   font-weight: 300;
-  @include serif();
+  @include raleway();
 
   strong {
     font-weight: 700;

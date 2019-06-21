@@ -185,7 +185,7 @@ function mytheme_block_editor_styles() {
 add_action( 'enqueue_block_editor_assets', 'mytheme_block_editor_styles' );
 
 
-add_action( 'wp_enqueue_scripts', 'wpb_add_fonts' );
+// add_action( 'wp_enqueue_scripts', 'wpb_add_fonts' );
 
 add_filter( 'body_class','my_body_classes' );
 function my_body_classes( $classes ) {

@@ -1,172 +1,63 @@
-.home-module-1 {
-  background: url("../img/bg-hero.jpg") center bottom no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
+#home-module-1 {
   position: relative;
-  height: 845px;
 
-  .secondary-container {
-    z-index: 999;
-
-    .ribbon {
-      font-size: 27px;
-      padding: .5em 0;
-    }
-  }
-  
-
-  .jumbotron {
+  video {
+    height: 100%;
     width: 100%;
-    flex: 1;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    float: left;
+    top: 0;
+    padding: none;
+    position: fixed;
   }
 
-  .h2 {
-      @include raleway();
-      font-style: normal;
-      text-align: center;
-    }
-     
-
-    h1 {
-      margin-top: .5em;
-      margin-bottom: .5em;
-      font-family: 'Cinzel', serif;
-      letter-spacing: 7px;
-      font-size: 47px;
-    }
-
-    .jumbo-content {
-      width: 77%;
-    }
-
-    .secondary-nav {
-      flex: 1;
-      margin-top: auto;
-    }
-
-    .btn-transparent {
-      padding: 0 0;
-      font-size: 17px;
-
-      &:hover {
-        background: transparent;
-      }
-    }
-
-
-  .list-inline {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    color: $black;
-    margin-bottom: 0;
-    
-
-    li {
-      @include montserrat();
-      letter-spacing: 1px;
-      font-weight: 500;
-      margin: 0 1em 0 0;
-      
-      
-      a {
-        color: rgba(255, 255, 255, 0.5);;
-
-        &:hover {
-          color: $sherpa-brand-primary;
-        }
-      }
-
-      &:first-child::before {
-        display: none;
-      }
-    }
+  .navbar-sherpa {
+    z-index: 999;
+    width: 100%;
   }
 
-  @include media-breakpoint-down(sm) {
-    background: url("../img/bg-hero-sm.jpg") center 50% no-repeat;
-    background-size: cover;
+  .menu-secondary-container {
+    width: 100%;
   }
 
-  @include media-breakpoint-down(lg) {
-    h1 {
-      font-size: 21px;
-    }
-
-    .h2 {
-      text-align: center;
-    }
-
-    .secondary-container .ribbon {
-      background: $sherpa-secondary-color;
-      font-size: 14px;
-      padding-right: 15px;
-      padding-left: 15px;
-      padding-top: 1em;
-      padding-bottom: 1em;
-    }
-  }
-
-  @include media-breakpoint-down(md) {
-    height: auto;
-      
-
-    .list-inline {
-      flex-wrap: wrap;
-      width: 100%;
-    }
-
-    .navbar-brand {
-      margin-bottom: 1.75em;
-    }
-
-    h1 {
-      letter-spacing: 2px;
-      margin-bottom: 1.75em;
-    }
-
-    .h2 {
-      line-height: 1.5;
-    }
-
-    .secondary-nav {
-      background: transparent;
-      text-align: center;
-      flex-wrap: wrap;
-      height: auto;
+  @include media-breakpoint-up(xl) {
+    .primary-menu {
       position: absolute;
-      top: 0;
       right: 0;
-      width: 100vw;
+      top: 0;
 
-      > li {
-        display: flex;
-        align-items: center;
-        color: $white;
-        width: 100%;
-        justify-content: center;
-        border-bottom: 1px solid $white;
+      
+      .menu-primary-container {
+        margin-left: auto;
+      }
+    }
+
+    .navbar-right li {
+      font-size: 15px;
+      text-transform: none;
+      letter-spacing: 0;
+    }
 
 
-        &::before {
-          display: none;
-        }
+    .secondary-menu .navbar-sherpa {
+      padding: 0 0;
+      bottom: 0;
+      position: absolute;
+
+      li {
+        border: 1px solid #b2b2b2;
+        border-left: 0;
+      } 
+ 
+       li {
+        width: 33.33%;
+        text-align: center;
       }
 
       li a {
-        color: $white;
-        font-size: 10px;
-        text-align: center;
-        padding: 36px 0;
-        width: 100%;
-        height: 100%;
-        position: relative;
+        padding: 2em 0;
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #fff;
 
         &:hover {
           background: $white;
@@ -175,126 +66,13 @@
       }
     }
 
-    .jumbotron {
-      padding: 4em 0 1em; 
-    } 
-
-    h1 {
-      font-size: 20px;
-      line-height: 1.5;
-    }
-
-    h2 {
-      font-size: 15px;
+    .primary-menu {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      display: flex;
+      padding: 1em 2.5em;
     }
   }
 }
-
-.jumbo-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-
-
-    &::before {
-      content: '';
-      background: rgb(0,0,0);
-      background: linear-gradient(90deg, rgba(0,0,0,0.56) 0%, rgba(255,255,255,0) 89%);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-    }
-    
-  }
-
-  .secondary-nav {
-    background : rgba(128, 128, 128, 0.56);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    position: relative;
-
-    
-    
-    .navbar-sherpa {
-      width: 100%;
-//       width: 100vw;
-      justify-content: space-around;
-      padding: 0 0;
-    }
-
-    .menu-primary-container {
-      width: 100%;
-    }
-
-
-
-    .navbar-nav {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-
-      li {
-        flex: 1;
-        border-right: 1px solid #B2BBBF;
-        z-index: 99999;
-        
-
-        &:last-child {
-          border-right: 0;
-        }
-
-        a {
-          padding-top: 2em;
-          padding-bottom: 2em;
-        }
-      }
-
-      li a {
-        text-align: center;
-      }
-    }
-
-    .dropdown-menu {
-      border-radius: 0;
-      min-width: 100%;
-
-      li {
-        border-right: 0;
-      }
-    }
-
-    .navbar-dark .navbar-nav .nav-link {
-      color: $white;
-      text-transform: none;
-      font-size: 18px;
-
-      &:hover {
-        background : rgba(153, 143, 98, 0.55);
-      }
-    }
-
-     @include media-breakpoint-down(lg) {
-        background: none;
-
-         .navbar-dark .navbar-nav .nav-link {
-            font-size: 14px;
-         }
-
-        .menu-primary-container {
-//           margin-top: 100px;
-          width: 100vw;
-          background: $sherpa-brand-primary;
-        }
-
-        .navbar-nav {
-          width: 100vw;
-        }
-     }
-
-  }

@@ -1,179 +1,33 @@
 .home-module-6 {
-    background: url('../img/bg-city.jpg') 0 0 no-repeat;
-    background-size: cover;
-    color: $white;
-    overflow: hidden;
-    height: 630px;
-
-    p {
-        margin-bottom: 0;
-        font-size: 18px;
-        color: $white;
-    }
+    padding: 5em 0;
 
     .col:first-child {
-        position: relative;
-        z-index: 0;
-
-        h2 {
-            &::after {
-              content: '';
-              border-bottom: 2px solid $white;
-              width: 20%;
-              height: 2px;
-              display: block;
-              margin-top: .5em;
-            }
-          }
+        min-height: 589px;
 
         &::before {
             content: '';
-            background : rgba(9, 16, 48, 0.21);
-            width: 50vw;
-            height: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            z-index: -1;
-        }
-    }
-
-    .col:last-child {
-        position: relative;
-        z-index: 0;
-        display: flex;
-        flex-direction: column;
-
-        .extra-padding {
-            flex: 1;
-            height: 100%;
-        }
-
-        &::before {
-            background : linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(14, 12, 13, 0.53) 46.87%, rgba(35, 31, 32, 0) 100%);
-            content: '';
-            width: 50vw;
-            height: 100%;
             position: absolute;
             left: 0;
             top: 0;
-            z-index: -1;
-        }
-    }
-
-
-    .extra-padding {
-        padding: 70px;
-
-    }
-
-    .bottom {
-        position: relative;
-        margin-top: auto;
-
-        p {
-            margin: 0 0;
-        }
-
-        .extra-padding {
-            display: flex;
-            padding: 36px 0 36px 70px;
-        }
-
-        &::before {
-            display: block;
-            position: absolute;
-            width: 50vw;
+            background: url('../img/two-people.jpg') 0 0 no-repeat;
+            background-size: cover;
             height: 100%;
-            left: -15px;
-            z-index: -1;
-            top: 0;
-            content: '';
-              background : rgba(0, 0, 0, 1);
-  opacity : 0.64;
-  filter: alpha(opacity=64) progid:DXImageTransform.Microsoft.Alpha(opacity=64) ;
-        }
-
-
-        p {
-            font-size: 20px;
-            margin-right: 20px;
-        }
-    }
-
-    @include media-breakpoint-down(lg) {
-        position: relative;
-        height: auto;
-        padding: 2em 0 0;
-
-        &::before {
-            content: '';
             width: 100%;
-            height: 100%;
-            display: block;
-            background: red;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            background : linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(5, 4, 4, 0.86) 41.81%, rgba(25, 22, 23, 0.37) 74.93%, rgba(35, 31, 32, 0) 100%);
         }
+    }
+    
+    .col:last-child {
+        background: #F6F6F6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 2em;
+    }
 
-
-        h2 {
-            font-size: 14px;
-        }
-
-        p {
-            font-size: 14px;
-            margin-top: 3.5em;
-            margin-bottom: 1em;
-            line-height: 1.5;
-        }
-
-        .col:before {
-            display: none;
-        }
-
-        h2:after {
-            left: 50%;
-            transform: translateX(-50%);
-            position: absolute;
-        }
-
-        .extra-padding {
-            padding: 1em 15px;
-            text-align: center;
-        }
-
-        .bottom .extra-padding {
-            padding: 0 0;
-            flex-direction: column;
-            display: flex;
-            text-align: center;
-
-            p {
-                text-align: center;
-                margin-bottom: 2em;
-            }
-        }
-
-        .bottom {
-            margin-top: auto;
-            padding: 1em 0;
-        }
-
-        .bottom::before {
-            width: 100vw;
-            left: -15px;
-        }
-
-        .bottom p {
-            font-size: 11px;
-            text-align: left;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            flex: 1;
-        }
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
     }
 }

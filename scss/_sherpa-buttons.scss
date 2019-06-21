@@ -19,6 +19,11 @@ input[type=submit] {
       color: $sherpa-brand-primary;
     }
   }
+
+  &.btn-alt {
+    background: rgba(255,255,255,0.27);
+    color: $white;
+  }
 }
 
 .btn,
@@ -38,6 +43,10 @@ input[type=submit] {
   @include montserrat();
   letter-spacing: $letterSpacing;
   text-transform: uppercase;
+
+  &.btn-gradient {
+    @include bg-gradient(left, $list4);
+  }
  
 
   &:hover,
@@ -47,7 +56,7 @@ input[type=submit] {
   &:hover:focus,
   &:hover:active,
   &:hover:visited {
-    color: $white;
+    color: $sherpa-brand-primary;
     background: $sherpa-secondary-color;
   }
 

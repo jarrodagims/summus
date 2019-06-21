@@ -1,52 +1,24 @@
 .home-module-7 {
-    padding: 97px 0;
+    @include bg-gradient(left, $list4, 1);
+    text-align: center;
+    color: $white;
 
     p {
-        color: #808080;
-        font-size: 18px;
-        font-weight: 300;
+        color: $white;
+        margin-bottom: 1em;
     }
 
-    h2 {
-        font-size: 26px; 
+    .extra-padding {
+        padding: 3em 0;
     }
 
-    @include media-breakpoint-down(lg) {
-      padding-top: 15px;
-      text-align: center;
-      padding-top: 2em;
-      padding-bottom: 1em;
+    input[type="email"] {
+        padding: 1em;
+        width: 100%;
+    }
 
-      img {
-          margin-bottom: 1em;
-      }
+    label {
+        width: 100%;
+    }
 
-      .col:last-child .extra-padding {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-
-      p {
-        font-size: 13px;
-      }
-
-      h2 {
-        position: relative;
-        text-align: center;
-        font-size: 14px;
-        margin-top: 2em;
-        margin-bottom: 1.5em;
-      }
-
-      p.blurb {
-        margin-top: 3em;
-        font-size: 14px;
-      }
-
-      h2::after {
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50%);
-      }
-  }
 }

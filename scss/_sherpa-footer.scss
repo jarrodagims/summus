@@ -22,6 +22,7 @@
     display: block;
   }
 
+
   .columns {
     column-count: 2;
 
@@ -68,28 +69,19 @@
       padding-left: 126px;
     }
 
-    &::before {
-      content: '';
-      background: $sherpa-brand-primary;
-      position: absolute;
-      width: 50vw;
-      height: 100%;
-      display: block;
-    }
   }
 
   .h2 {
+    @include raleway();
     display: block;
     margin-bottom: 1em;
     letter-spacing: 0;
-    font-weight: 300;
     font-size: 26px;
-    @include serif();
   }
 
   iframe {
-    right: 0;
     width: 50vw;
+    position: absolute;
   }
 
   .map {
@@ -227,6 +219,10 @@
 
       
     }
+  }
+
+  .navbar-sherpa .navbar-collapse, .navbar-sherpa .navbar-form {
+    justify-content: flex-start;
   }
 
   .navbar-brand {
@@ -400,7 +396,7 @@
     > div {
       width: 50%;
       display: flex;
-      align-items: flex-end;
+      flex-direction: column;
 
       ul {
         margin: 0 0;
@@ -481,8 +477,6 @@
         }
       }
     }
-
-    
   }
 
   
@@ -491,10 +485,42 @@
 
 
 .sub-footer {
-  background: #FFF;
-  color: $black;
-  text-align: center;
+  background: #313437;
+  color: $white;
+  text-align: left;
   padding: 1em 0;
+
+  .navbar-nav .nav-link {
+    font-size: 15px;
+    text-transform: none;
+  }
+
+  .navbar-nav {
+    font-size: 15px;
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    justify-content: flex-start;
+    font-size: 15px;
+    color: $white;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: $white;
+  }
+
+  .col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .col:first-child {
+    justify-content: flex-start;
+  }
 
   @include media-breakpoint-down(lg) {
     font-size: 9px;

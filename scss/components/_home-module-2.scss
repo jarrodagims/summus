@@ -23,25 +23,38 @@
 
   .frame {
     background: #F1F1F1;
-    padding: 2em 1.5em 0;
+    padding: 2em 1.5em;
     display: inline-block;
 
     h2 {
       font-size: 18px;
       color: #000;
-      padding: 1em 0 0;
+      padding: 1.5em 0 0;
+      margin-bottom: 0;
     }
   }
 
   .col {
     display: flex;
 
-    .frame {
-      margin-left: auto;
-    }
+  }
 
-    &:last-child .frame {
-      margin-right: auto;
+  @include media-breakpoint-up(lg) {
+    padding: 5em 0;
+
+    
+
+    .frame {
+      margin-top: 1.5em;
+      margin-bottom: 3.5em;
+
+      &.align-right {
+        margin-left: auto;
+      }
+
+      &.align-left {
+        margin-right: auto;
+      }
     }
   }
 

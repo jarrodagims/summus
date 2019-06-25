@@ -24,7 +24,7 @@
 
 
   .columns {
-    column-count: 2;
+//     column-count: 2;
 
 //     > div {
 //       display: flex;
@@ -75,13 +75,13 @@
     @include raleway();
     display: block;
     margin-bottom: 1em;
-    letter-spacing: 0;
-    font-size: 26px;
+    font-size: 20px;
   }
 
   iframe {
     width: 50vw;
     position: absolute;
+    height: 100%;
   }
 
   .map {
@@ -128,10 +128,18 @@
     }
   }
 
+  p strong {
+    color: $black;
+    font-weight: 600;
+  }
+
+  p strong em {
+    font-size: 17px;
+  }
+
   p {
    letter-spacing: 0;
-   font-size: 15px;
-   @include montserrat();
+   font-size: 16px;
   }
 
   p img {

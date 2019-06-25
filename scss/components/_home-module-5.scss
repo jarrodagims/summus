@@ -10,11 +10,12 @@
   }
 
   .extra-padding {
-    padding: 7em 5em 8em 5em;
+    padding: 5em 5em;
   }
 
   h2 {
     font-size: 20px;
     margin-bottom: 2em;
+    letter-spacing: $letterSpacing;
   }
 }

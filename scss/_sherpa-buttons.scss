@@ -3,11 +3,11 @@
 //      button-variant($color, $background, $border)
 input[type=submit] {
   background: transparent;
-  border: 0;
   font-size: 12px;
   letter-spacing: 0;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding: 1.25em 5em;
+  border: 1px solid transparent;
+
 
   &:focus, &:active {
     background: $sherpa-brand-primary;
@@ -24,11 +24,16 @@ input[type=submit] {
     background: rgba(255,255,255,0.27);
     color: $white;
   }
+
+  &:hover {
+    background: $white;
+    color: $sherpa-brand-primary;
+  }
 }
 
 .btn,
 .btn-success {
-  padding: 1.5em 2em;
+  padding: 1.25em 5em;
   font-size: 15px;
   font-weight: 600;
   color: $white;
@@ -43,6 +48,8 @@ input[type=submit] {
   @include montserrat();
   letter-spacing: $letterSpacing;
   text-transform: uppercase;
+  font-size: 11px;
+  border: 1px solid transparent;
 
   &.btn-gradient {
     @include bg-gradient(left, $list4);
@@ -58,6 +65,7 @@ input[type=submit] {
   &:hover:visited {
     color: $sherpa-brand-primary;
     background: $sherpa-secondary-color;
+    border: 1px solid $sherpa-brand-primary;
   }
 
   &.btn-transparent {
@@ -105,7 +113,7 @@ input[type=submit] {
     &:focus {
       color: $sherpa-brand-primary;
       background: $white;
-      border-color: transparent;
+      border-color: $sherpa-brand-primary;
     }
   }
 

@@ -208,7 +208,7 @@ $list4: $darkred 0%, $red 50%, $darkestred 100%;
   &:focus {
     background-color: $color;
   }
-}
+} 
 
 @mixin expander($background) {
   cursor: pointer;

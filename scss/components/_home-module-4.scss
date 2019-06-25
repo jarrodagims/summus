@@ -1,20 +1,13 @@
 .home-module-4 {
   background: #F1F1F1;
-  padding: 97px 0;
+  padding: 110px 0;
 
   h2 {
-    @include serif();
-    font-size: 27px;
-
-    &::after {
-      content: '';
-      border-bottom: 2px solid $sherpa-secondary-color;
-      width: 24%;
-      height: 2px;
-      display: block;
-      margin-top: 1em;
-      margin-bottom: 1.5em;
-    }
+    text-transform: uppercase;
+    @include raleway();
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: $letterSpacing;
   }
 
   p.blurb {

@@ -17,28 +17,24 @@
                     <div class="columns">
                         <div>
 
-                            <p>2077 N. Zaragoza Ste. B203<br />
-                                El Paso, TX 79938
+                            <p>
+                                <strong><em>Location</em></strong><br /><br />
+                                2077 N. Zaragoza Ste. B203<br />
+                                El Paso, TX 79938<br />
+                                <a href="tel:9154949069"><strong>915.494.9069</strong></a>
                             </p>
 
-                            <p>T: <a href="tel:9154949069">915.494.9069</a><br />
-                            </p>
 
                         </div>
 
-                        <div>
-                            <p><span class="sub-title">Hours</span>
-                                Monday - Friday: 8:30 a.m. - 5:30 p.m.
-                                Saturday - Sunday: Closed </p>
+                        <div></div>
 
-
-                        </div>
                     </div>
 
                     <div class="flex-col">
                         <div>
                             <p>
-                                Hours: open 24 hours
+                                <strong>Hours:</strong> open 24 hours
                             </p>
                             <div>
                                 <ul class="list-inline social-media sm">

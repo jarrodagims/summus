@@ -52,13 +52,13 @@ Template Name: Home
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col">
-                            <div class="frame"><img src="<?=IMGURL?>jj-bella.jpg" alt="JJ & Bella">
+                            <div class="frame align-right"><img src="<?=IMGURL?>jj-bella.jpg" alt="JJ & Bella">
                                 <h2>JJ & Bella</h2>
                             </div>
                         </div>
 
                         <div class="col">
-                            <div class="frame"><img src="<?=IMGURL?>rene-preston.jpg" alt="Rene & Preston">
+                            <div class="frame align-left"><img src="<?=IMGURL?>rene-preston.jpg" alt="Rene & Preston">
                                 <h2>
                                     Rene & Preston
                                 </h2>
@@ -126,7 +126,7 @@ Template Name: Home
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h1><?=__('Testimonials')?></h1>
+                <h2><?=__('Testimonials')?></h2>
                 <?php echo get_template_part('template-parts/testimonial-slider'); ?>
             </div>
         </div>
@@ -168,7 +168,7 @@ Template Name: Home
                         BUYING & SELLING</h2>
                     <a href="">
                         <button class="btn btn-primary">
-                            OUR TEAM</button>
+                            LEARN MORE</button>
                     </a>
                 </div>
             </div>

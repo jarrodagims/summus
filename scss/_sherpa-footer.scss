@@ -10,6 +10,7 @@
   color: #606060;
   @include dropshadow();
   overflow: hidden;
+  position: relative;
 
   .blurb {
     font-family: 'Roboto', sans-serif;
@@ -20,6 +21,16 @@
     letter-spacing: 0;
     margin-bottom: .5em;
     display: block;
+  }
+
+  img {
+    position: absolute;
+    left: 20px;
+    top: 68px;
+  }
+
+  .h2 {
+    margin-top: calc(47px + 1em);
   }
 
 
@@ -185,49 +196,7 @@
     }
   }
 
-  .box-container {
-    margin-top: 74px;
-    margin-bottom: 74px;
-    display: flex;
-  }
-
-  .contact-box {
-    text-align: center;
-    position: relative;
-    @include gradient;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 1px;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    
-
-    > div {
-      background: $white;
-      padding: 1em;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      alignt-items: center;
-      flex-direction: column;
-    }
-
-    h3 {
-      margin-bottom: 1em;
-      font-size: 21px;
-      letter-spacing: 3px;
-    }
-
-    p {
-      margin-bottom: 3em;
-      @include acumin();
-      letter-spacing: $letterSpacing;
-
-      
-    }
-  }
+  
 
   .navbar-sherpa .navbar-collapse, .navbar-sherpa .navbar-form {
     justify-content: flex-start;
@@ -330,6 +299,8 @@
   @include media-breakpoint-down(lg) {
     background: $white;
     text-align: center;
+
+    
 
     .col:last-child {
       padding: 0 0;

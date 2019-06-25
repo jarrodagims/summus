@@ -1,13 +1,15 @@
 <?php wp_footer();?>
 
 <footer id="footer">
+    <img src="<?=IMGURL?>logo.png" class="d-none d-lg-block" alt="Summus Realty" height="47">
+
     <div class="container">
 
         <div class="row">
 
             <div class="col col-get-in-touch">
                 <div class="extra-padding">
-                    <img src="<?=IMGURL?>logo.png" alt="Summus Realty" height="47">
+                    <img src="<?=IMGURL?>logo.png" class="d-block d-lg-none" alt="Summus Realty" height="47">
 
                     <span class="h2">
                         <span class="brand">CONTACT</span> US TODAY

@@ -15,6 +15,10 @@
                         <span class="brand">CONTACT</span> US TODAY
                     </span>
 
+                    <p>Let us guide you through the process of selling your home.
+                        <br />Call us at <a href="tel:9154949069">915-494-9069</a> today and ask
+                        us about our services, our agents,<br /> or realtor training.
+                    </p>
 
                     <div class="columns">
                         <div>

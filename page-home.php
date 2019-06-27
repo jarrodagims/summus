@@ -10,27 +10,26 @@ Template Name: Home
                 alt="<?php echo get_bloginfo(
                             'description'
                         ); ?>" /></a>
-        <?php echo responsive_bs_menu('primary', 'right', SITENAME); ?>
+        <?php echo responsive_bs_menu('primary', 'right', SITENAME, 'navbar-expand-lg'); ?>
     </div>
 
     <?php putRevSlider( 'home-video' ); ?>
 
     <div class="secondary-menu">
-        <?php echo responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
+        <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME, 'navbar-expand'); ?>
     </div>
 </section>
 
 <section class="home-module-2">
-
     <div class="container">
         <div class="row">
             <div class="col-xl-12 text-center">
 
-                <h1>Real Estate Agency — A New Approach to Home Buying and Selling
+                <h1>Real Estate Agency | A New Approach to Selling Your Home
                 </h1>
 
                 <h2 class="h2 expander" data-toggle="collapse" data-target="#collapse" aria-expanded="false"
-                    aria-controls="collapse"><span>Real Estate Company
+                    aria-controls="collapse"><span>Real Estate Company in El Paso
                     </span></h2>
 
                 <h3>
@@ -106,7 +105,7 @@ Template Name: Home
 <section class="home-module-3">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col col-md-6 col-offset-6">
                 <h2>
                     The Summus Methodology — Providing Value & Quality Service
                 </h2>
@@ -152,7 +151,7 @@ Template Name: Home
 <section class="home-module-4">
     <div class="container">
         <div class="row">
-            <div class="col text-center">
+            <div class="col text-center col-md-6 col-md-offset-6">
                 <h2><?=__('Testimonials')?></h2>
                 <?php echo get_template_part('template-parts/testimonial-slider'); ?>
             </div>
@@ -172,9 +171,6 @@ Template Name: Home
                         of people’s prosperity. It’s not just houses for sale, it’s an opportunity to help someone find
                         the right home, where they will set their roots, grow their families, invest, and improve our
                         community. </p>
-
-
-
                 </div>
             </div>
             <div class="col">
@@ -229,18 +225,5 @@ Template Name: Home
         </div>
     </div>
 </section>
-
-<section class="home-module-7 email-signup-form">
-    <div class="container">
-        <div class="extra-padding">
-            <p>If you are currently working on getting your real estate license, sign up here<br
-                    class="d-none d-lg-block">
-                to register for Free Exam preparation classes!</p>
-            <?php
-                        echo do_shortcode('[contact-form-7 id="63" title="Email Sign Up"]');
-                        ?>
-        </div>
-    </div>
-</section>
-
+<?php echo get_template_part('template-parts/contact-form'); ?>
 <?php get_footer();?>

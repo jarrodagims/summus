@@ -1,10 +1,9 @@
 <?php
 	
-	function bs_menu($is_responsive = TRUE, $theme_location = 'primary', $menu_side = 'left', $brand = NULL, $rightNav = NULL) {
+	function bs_menu($is_responsive = TRUE, $theme_location = 'primary', $menu_side = 'left', $brand = NULL, $expandparam = NULL) {
     	ob_start();
     	?>
-<nav
-    class="navbar navbar-sherpa  navbar-expand-lg  navbar-dark  <?php if(!is_front_page()) : ?>navbar-expand-lg<?php endif; ?>">
+<nav class="navbar navbar-sherpa  navbar-dark <?=$expandparam?>">
     <?php
 		if($is_responsive == TRUE) {
 			$collapse_id = rand(1,99);
@@ -14,7 +13,7 @@
         data-target="#bs-example-navbar-collapse-<?=$collapse_id?>" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
+    </button>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-<?=$collapse_id?>">
@@ -51,10 +50,10 @@
 		return ob_get_clean();
 	}
 	
-	function responsive_bs_menu($theme_location = 'primary', $menu_side = 'left', $brand = NULL) {
-		return bs_menu(TRUE, $theme_location, $menu_side, $brand);
+	function responsive_bs_menu($theme_location = 'primary', $menu_side = 'left', $brand = NULL, $expandparam = NULL) {
+		return bs_menu(TRUE, $theme_location, $menu_side, $brand, $expandparam);
 	}
 	
-	function non_responsive_bs_menu($theme_location = 'primary', $menu_side = 'left', $brand = NULL) {
-		return bs_menu(FALSE, $theme_location, $menu_side, $brand);
+	function non_responsive_bs_menu($theme_location = 'primary', $menu_side = 'left', $brand = NULL, $expandparam = NULL) {
+		return bs_menu(FALSE, $theme_location, $menu_side, $brand, $expandparam);
 	}

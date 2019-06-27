@@ -37,5 +37,28 @@
     .collapse p, .collapsing p {
         margin-top: 2em;
     } 
+
+
+    @include media-breakpoint-down(lg) { 
+
+    .col:first-child {
+        min-height: 197px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url('../img/couple-sm.jpg') 0 0 no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+        h2 {
+            margin-bottom: 1em;
+        }
+    }
     
 }

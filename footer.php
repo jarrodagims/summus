@@ -16,7 +16,8 @@
                     </span>
 
                     <p>Let us guide you through the process of selling your home.
-                        <br />Call us at <a href="tel:9154949069">915-494-9069</a> today and ask
+                        <br class="d-none d-lg-block" />Call us at <a href="tel:9154949069">915-494-9069</a> today and
+                        ask
                         us about our services, our agents,<br /> or realtor training.
                     </p>
 
@@ -57,10 +58,6 @@
                                 </ul>
                             </div>
                         </div>
-
-                        <div>
-                            <img src="<?=IMGURL?>three-best-rated.png" alt="">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -78,8 +75,8 @@
 <div class="sub-footer">
     <div class="container">
         <div class="row">
-            <div class="col">
-                <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
+            <div class="col d-none d-lg-block">
+                <?php echo non_responsive_bs_menu('primary', 'left', SITENAME); ?>
             </div>
             <div class="col">
                 <p>

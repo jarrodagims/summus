@@ -1,6 +1,19 @@
 (function($) {
   $(document).ready(function() {
     //associate each waypoint with one list item in nav-sidebar
+    $.fn.cycle.log = $.noop;
+
+    //main floor plan slideshow
+    $(".slideshow").cycle({
+      timeout: 0,
+      fx: "slide",
+      slides: "> div",
+      pauseOnHover: "true",
+      // pager: ".slide-nav",
+      next: ".slide-next",
+      pagerTemplate: ""
+      // autoHeight: "container"
+    });
 
     $(".waypoint").each(function() {
       var self = $(this);
@@ -23,29 +36,39 @@
       });
     });
 
-    $(".sidebar-link").click(function(e) {
-      e.preventDefault();
+    (function() {
+      var deskFunctions = function() {
+        //make dropdown hoverable
+      };
 
-      $("html, body").animate(
-        {
-          scrollTop: $($(this).attr("href")).offset().top
+      var mobileFunctions = function() {
+        //make dropdown clickable
+      };
+
+      //Only do slideshow on small screens
+      var timeout;
+      window.addEventListener(
+        "resize",
+        function(event) {
+          if (timeout) {
+            window.cancelAnimationFrame(timeout);
+          }
+          timeout = window.requestAnimationFrame(function() {
+            resize();
+          });
         },
-        500,
-        "linear"
+        false
       );
-    });
 
-    //stick nav
-    function stickyExample() {
-      var $stickyElement = $(".sticky");
-
-      if ($stickyElement.length) {
-        sticky = new Waypoint.Sticky({
-          element: $stickyElement[0]
-        });
+      function resize() {
+        if ($(window).width() >= 992) {
+          deskFunctions();
+        } else if ($(window).width() < 992) {
+          mobileFunctions();
+        }
       }
-    }
 
-    stickyExample();
+      resize();
+    })();
   });
 })(jQuery);

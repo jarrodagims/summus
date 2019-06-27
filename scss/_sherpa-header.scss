@@ -103,6 +103,25 @@
   img {
     height: 51px;
   }
+
+  @include media-breakpoint-down(lg) {
+    padding: 10px 20px;
+    
+
+    img {
+      height: 23px;
+
+    }
+  }
+}
+
+.primary-menu {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
 }
 
 // body.internal {

@@ -29,6 +29,11 @@ input[type=submit] {
     background: $white;
     color: $sherpa-brand-primary;
   }
+
+   @include media-breakpoint-down(lg) {
+    font-size: 8px;
+    padding: 1.5em 5em;
+  }
 }
 
 .btn,
@@ -132,7 +137,7 @@ input[type=submit] {
   }
 
   @include media-breakpoint-down(lg) {
-    font-size: 9px;
+    font-size: 8px;
     padding: 1.5em 2em;
   }
 }

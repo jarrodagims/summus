@@ -23,11 +23,19 @@
     }
   }
 
+  .col {
+    margin: 0 auto;
+  }
+
   @include media-breakpoint-down(lg) {
       padding-top: 15px;
       text-align: center;
       padding-top: 2em;
       padding-bottom: 1em;
+
+      .col {
+        margin: 0 auto;
+      }
 
       .col:last-child .extra-padding {
         padding-left: 15px;

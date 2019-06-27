@@ -207,18 +207,9 @@
   }
 
 
-  @media screen and (min-width: 1200px) and (max-width: 1600px) {
-    span.number {
-      top: 0;
-    }
-  }
-
 
   @include media-breakpoint-down(md) {
-
-    iframe {
-      display: none;
-    }
+      
 
     .col-get-in-touch {
       .extra-padding {
@@ -300,10 +291,22 @@
     background: $white;
     text-align: center;
 
-    
+    iframe {
+      position: relative;
+      width: 100%;
+    }
+
+    .h2 {
+      margin-top: 3em;
+      font-size: 12px;
+    }
 
     .col:last-child {
       padding: 0 0;
+    }
+
+    p strong em {
+      font-size: 12px;
     }
 
     .col p:last-child {
@@ -428,7 +431,11 @@
     }
 
     img {
-      height: 43px;
+      height: 36px;
+      margin: 0 auto;
+      position: relative;
+      top: 0;
+      left: 0;
     }
 
     .col .extra-padding {
@@ -450,10 +457,6 @@
         align-items: center;
         text-align: center;
 
-        ul {
-          margin-top: 2em;
-          margin-bottom: 2em;
-        }
       }
     }
   }
@@ -476,6 +479,7 @@
 
   .navbar-nav {
     font-size: 15px;
+    display: flex;
   }
 
   .navbar-collapse,
@@ -503,5 +507,6 @@
 
   @include media-breakpoint-down(lg) {
     font-size: 9px;
+
   }
 } 

@@ -8,6 +8,7 @@
 }
 
 
+
 .flex-row {
   display: flex;
 
@@ -1123,12 +1124,7 @@ $navWidth: 60px;
       width: auto;
     }
 
-    .navbar-brand img {
-      width: auto;
-      height: 71px;
-      margin: 0 auto;
-    }
-
+    
     #nav-sidebar {
       top: 0;
       left: 0;
@@ -1146,10 +1142,10 @@ $navWidth: 60px;
     .navbar-dark .navbar-toggler {
       width: $navWidth;
       position: absolute;
-      top: 60px;
       right: 0;
       border: 0;
       border-color: transparent;
+      top: 20px;
 
       .navbar-toggler-icon {
         transform: translateX(-50%) translateY(-50%);
@@ -1189,9 +1185,9 @@ $navWidth: 60px;
   }
 
   @include media-breakpoint-down(lg) {
-    .navbar-dark .navbar-toggler {
-      top: 70px;
-    }
+//     .navbar-dark .navbar-toggler {
+//       top: 70px;
+//     }
 
     #nav-sidebar {
       display: none;
@@ -1202,11 +1198,11 @@ $navWidth: 60px;
     }
   }
 
-  @include media-breakpoint-down(sm) {
-    .navbar-dark .navbar-toggler {
-      top: 65px;
-    }
-  }
+//   @include media-breakpoint-down(sm) {
+//     .navbar-dark .navbar-toggler {
+//       top: 65px;
+//     }
+//   }
 }
 
 // .internal .sidebar-container {
@@ -2840,4 +2836,9 @@ body #main .container article h1 {
   font-size: 13px;
   color: #606060;
   transition: 500ms linear all;
+}
+
+
+div.wpcf7 .ajax-loader {
+  position: absolute;
 }

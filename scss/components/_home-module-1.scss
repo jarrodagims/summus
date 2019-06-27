@@ -20,6 +20,9 @@
   }
 
   @include media-breakpoint-up(xl) {
+
+
+
     .primary-menu {
       position: absolute;
       right: 0;
@@ -67,12 +70,18 @@
     }
 
     .primary-menu {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-      display: flex;
+     
       padding: 1em 2.5em;
     }
+  } 
+
+  @include media-breakpoint-down(lg) {
+
+    .secondary-menu {
+      .navbar-sherpa {
+        position: relative;
+      }
+    }
   }
+
 }

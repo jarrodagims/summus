@@ -9,6 +9,10 @@
     justify-content: center;
     padding: 3em 0; 
 
+    .col {
+        margin: 0 auto;
+    } 
+
 
     h2 {
         font-size: 18px;
@@ -25,6 +29,15 @@
 
     .collapse p, .collapsing p {
         margin-top: 2em;
+    }
+
+
+    ul {
+        color: $white;
+    }
+
+    ul {
+        color: $white;
     }
 
 }

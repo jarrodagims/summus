@@ -16,6 +16,14 @@
         width: 100%;
     }
 
+    a {
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
     @include media-breakpoint-up(lg) {
          .extra-padding {
             padding: 5em 0;
@@ -29,6 +37,40 @@
 
     label {
         width: 100%;
+    }
+
+    @include media-breakpoint-down(lg) {
+
+        a {
+            color: $white;
+            font-weight: 600;
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 2em;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+
+        input[type="email"] {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        form .form-group:last-child {
+            margin-bottom: 0;
+        } 
+
+        .btn {
+            margin-top: 2em;
+        }
+
+        padding: 3em 0;
     }
 
 }

@@ -50,6 +50,7 @@
 
       &.align-right {
         margin-left: auto;
+        
       }
 
       &.align-left {
@@ -59,6 +60,36 @@
   }
 
   @include media-breakpoint-down(lg) {
+
+    padding: 2em 0;
+
+    .frame {
+      margin-top: 1.5em;
+      margin-bottom: 3.5em;
+
+      &.align-right {
+        margin: 0 auto 2em;
+      }
+
+      &.align-left {
+        margin: 0 auto 2em;
+      }
+    }
+
+    h1 {
+      font-size: 15px;
+    }
+
+    h2 {
+      font-size: 13px;
+      margin-bottom: 1em;
+    }
+
+    .frame {
+      margin-bottom: 2em;
+    }
+
+
     h2.h4 {
       font-size: 14px;
       margin-bottom: 0;

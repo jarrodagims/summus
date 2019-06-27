@@ -22,5 +22,5 @@
         </div>
     </div>
 </section>
-
+<?php echo get_template_part('template-parts/contact-form'); ?>
 <?php get_footer(); ?>

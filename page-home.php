@@ -59,8 +59,6 @@ Template Name: Home
                 </h3>
 
 
-
-
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col">

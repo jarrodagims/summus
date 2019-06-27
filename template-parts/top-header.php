@@ -2,25 +2,18 @@
     <div class="container-fluid">
         <div class="v-align row">
             <div class="col navbar-button text-center">
-                <ul class="list-inline social-media lg">
-                    <li><a href="https://www.facebook.com/RiosandParadaLaw/"
-                            class="facebook-button social-media-button lg square lighten external" target="_blank"><i
-                                class="fab fa-facebook-f fa-fw fa-lg"><span>Facebook</span></i></a></li>
-                    <li><a href="https://twitter.com/riosparadalaw"
-                            class="twitter-button social-media-button lg square lighten external" target="_blank"><i
-                                class="fab fa-twitter fa-fw fa-lg"><span>Twitter</span></i></a></li>
-
-                    <li><a href="#espanol">ESPAÑOL</a></li>
-                </ul>
+                <div class="primary-menu">
+                    <a id="header-logo" class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
+                            src="<?= IMGURL; ?>logo.png" alt="<?php echo get_bloginfo(
+                            'description'
+                        ); ?>" /></a>
+                    <?php echo responsive_bs_menu('primary', 'right', SITENAME, 'navbar-expand-lg'); ?>
+                </div>
 
 
-
-                <ul class="nav navbar-nav navbar-right">
-
-                    <li><a
-                            href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">TEL:
-                            <?php printPhone();?></a></li>
-                </ul>
+                <div class="secondary-menu">
+                    <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME, 'navbar-expand'); ?>
+                </div>
             </div>
         </div>
     </div>

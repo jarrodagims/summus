@@ -34,13 +34,6 @@
             ?>
 <div class="banner banner-bottom">
     <span class="banner-title">IMMIGRATION & PERSONAL INJURY ATTORNEYS AT LAW</span>
-    <?php if (has_post_thumbnail( $post->ID ) ):
-                echo the_post_thumbnail(array(1060,209));
-            else:
-                ?>
-    <img src="<?= IMGURL ?>internal-banner.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
-    <?php
-            endif; ?>
 </div>
 <?php
             if (get_field('page_bottom', $pageid)) { ?>

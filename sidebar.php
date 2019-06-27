@@ -12,60 +12,7 @@
     </div>
     <?php endif; ?>
     <?php if (!is_page('contact-us')) : ?>
-    <div class="container three-col">
-        <div>
-
-            <div class="three-columns">
-                <div>
-                    <div class="m-row">
-                        <div class="img-container">
-                            <img src="<?=IMGURL?>knees.jpg" alt="">
-                        </div>
-
-                        <div class="column-top">
-                            <a href="<?=SITEURL?>/personal-injury/">
-                                <p>Personal Injury</p>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="immigration-lawyer">
-
-                    <div class="m-row">
-                        <div class="img-container">
-                            <img src="<?=IMGURL?>passport.jpg" alt="">
-                        </div>
-
-                        <div class="column-top">
-                            <a href="<?=SITEURL?>/immigration/">
-                                <p>Immigration</p>
-                            </a>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="family-lawyer">
-
-                    <div class="m-row">
-                        <div class="img-container">
-                            <img src="<?=IMGURL?>happy-people.jpg" alt="">
-                        </div>
-
-                        <div class="column-top">
-                            <a href="<?=SITEURL?>/family-law/">
-                                <p>Family Law</p>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-
+    <img src="<?=IMGURL?>couple-sidebar.jpg" alt="">
 
     <?php endif; ?>
 </div>

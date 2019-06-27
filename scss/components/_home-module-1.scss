@@ -13,6 +13,7 @@
   .navbar-sherpa {
     z-index: 999;
     width: 100%;
+    align-items: flex-start;
   }
 
   
@@ -25,12 +26,10 @@
 
 @include media-breakpoint-up(xl) {
 
-
-
     .primary-menu {
       position: absolute;
       right: 0;
-      top: 0;
+      bottom: 0;
 
       
       .menu-primary-container {
@@ -50,6 +49,7 @@
       bottom: 0;
       position: absolute;
       width: 100%;
+      
 
       li {
         border: 1px solid #b2b2b2;

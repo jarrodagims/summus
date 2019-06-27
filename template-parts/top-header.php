@@ -11,9 +11,6 @@
                 </div>
 
 
-                <div class="secondary-menu">
-                    <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME, 'navbar-expand'); ?>
-                </div>
             </div>
         </div>
     </div>

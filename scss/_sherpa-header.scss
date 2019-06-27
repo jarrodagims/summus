@@ -141,6 +141,19 @@
   height: auto;
   margin-top: 0px;
   margin-bottom: 0px;
+  height: 472px;
+
+  .primary-menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #606060;
+      font-weight: 300;
+      font-size: 15px;
+    }
+  }
 }
 
 .primary-menu {

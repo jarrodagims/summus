@@ -67,17 +67,24 @@
   }
 
   .btn {
-    margin-top: 2em;
+    margin-top: 1em;
   }
 }
 
 body #main .container article #sidebar {
-  width: 498px;
   padding: 0 0;
   margin-left: 105px;
   margin-bottom: 1em;
   z-index: 9999;
   max-width: 100%;
+  background: #F6F6F6;
+  padding-bottom: 2em;
+
+  .h2 {
+    font-size: 16px;
+    padding-top: 3em;
+    line-height: 1.5;
+  }
 
  &.submit-files {
     margin: 0 auto;

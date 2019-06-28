@@ -290,10 +290,11 @@ body {
         }
 
         p.blurb {
-          font-weight: 300;
-          font-family: "Poppins", sans-serif;
-          font-size: 23px;
+          font-weight: 600;
+          @include roboto();
+          font-size: 15px;
           color: #606060;
+          font-style: italic;
         }
 
         p {
@@ -592,7 +593,8 @@ body {
 
         .blurb {
           font-size: 22px;
-          margin-bottom: 2em;
+          margin-top: 4em;
+          margin-bottom: 4em;
           font-weight: 300;
           line-height: 1.5;
         }
@@ -709,13 +711,14 @@ body {
 
       .page-content h2,
       .page-content h3 {
-        font-weight: 300;
+        font-weight: 400; 
         line-height: 1.5;
         opacity: 0.75;
         color: #4d4d4d;
         margin-top: 1em;
         font-size: 20px;
         margin-bottom: 1em;
+        @include roboto();
 
         &.expander,
         .expander {
@@ -2734,7 +2737,7 @@ a[data-toggle="modal"] {
 }
 
 @include media-breakpoint-up(xl) {
-  .container {
+  .page-template-page-home .container {
     max-width: 1400px;
     height: 100%;
 
@@ -2757,9 +2760,10 @@ a[data-toggle="modal"] {
 
 body #main .container article h1 {
   line-height: 1.5;
-  font-size: 30px;
+  font-size: 20px;
   color: #606060;
-  font-weight: 300;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .article-meta,

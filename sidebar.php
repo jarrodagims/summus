@@ -13,6 +13,9 @@
     <?php endif; ?>
     <?php if (!is_page('contact-us')) : ?>
     <img src="<?=IMGURL?>couple-sidebar.jpg" alt="">
-
+    <div class="h2"><span class="brand">SUMMUS SERVICES</span> EXTEND<br />
+        BEYOND BUYING & SELLING</div>
+    <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary">
+            LEARN MORE</button></a>
     <?php endif; ?>
 </div>
